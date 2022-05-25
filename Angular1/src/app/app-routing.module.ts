@@ -6,7 +6,7 @@ import { HomePageComponent } from './Components/home-page/home-page.component';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'/home', pathMatch:'full'},
+  {path:'', redirectTo:'/home-page', pathMatch:'full'},
   {path:'home-page' , component:HomePageComponent},
   {path:'about', component:AboutUsComponent},
   {path:'cart', component:CartComponent},
