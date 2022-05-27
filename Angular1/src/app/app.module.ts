@@ -11,6 +11,7 @@ import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.co
 import { FormsModule } from '@angular/forms';
 import { AddTocartComponent } from './Components/add-tocart/add-tocart.component';
 import { RemovecartComponent } from './Components/removecart/removecart.component';
+import { DefaultChildComponent } from './Components/default-child/default-child.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { RemovecartComponent } from './Components/removecart/removecart.componen
     PagenotfoundComponent,
     AddTocartComponent,
     RemovecartComponent,
+    DefaultChildComponent,
   ],
   imports: [
     BrowserModule,
