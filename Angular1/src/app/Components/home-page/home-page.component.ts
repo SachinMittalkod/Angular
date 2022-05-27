@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-message:string="hello working fine here"
+  title = 'Angular1';
+  message:string='hello'
+  event:string='dude'
   constructor() { }
 
   ngOnInit(): void {
   }
+ 
 
+  clicked():void{
+    alert("You have submitted")
+  }
 }

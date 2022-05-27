@@ -9,6 +9,9 @@ import { CartComponent } from './Components/cart/cart.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
 import { FormsModule } from '@angular/forms';
+import { AddTocartComponent } from './Components/add-tocart/add-tocart.component';
+import { RemovecartComponent } from './Components/removecart/removecart.component';
+
 
 @NgModule({
   declarations: [
@@ -16,9 +19,9 @@ import { FormsModule } from '@angular/forms';
     HomePageComponent,
     CartComponent,
     AboutUsComponent,
-    PagenotfoundComponent
-   
-
+    PagenotfoundComponent,
+    AddTocartComponent,
+    RemovecartComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,3 +33,14 @@ import { FormsModule } from '@angular/forms';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+
+
+
+
+
+
+
+
