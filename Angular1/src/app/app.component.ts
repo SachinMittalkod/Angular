@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular1';
+  message:string='hello'
+  event:string='dude'
+
+  clicked():void{
+    alert("You have submitted")
+  }
 }

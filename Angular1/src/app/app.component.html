@@ -36,6 +36,14 @@
       </ul>
     </div>
   </nav>
+  <div>
+    <h1>{{message}}</h1>
+    <h1>Event Binding</h1>
+    <button (click)="clicked()">Submit</button>
+    <h1>Two way Binding</h1>
+    <input type="text" [(ngModel)]="event">
+    <h1>{{event}}</h1>
+  </div>
 </body>
 </html>
 
