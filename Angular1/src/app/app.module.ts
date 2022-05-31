@@ -10,6 +10,7 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
 import { FormsModule } from '@angular/forms';
 import { AddTocartComponent } from './Components/add-tocart/add-tocart.component';
+import { ServiceComponent } from './Components/service/service.component';
 
 
 
@@ -26,6 +27,7 @@ import { AddTocartComponent } from './Components/add-tocart/add-tocart.component
     AboutUsComponent,
     PagenotfoundComponent,
     AddTocartComponent,
+    ServiceComponent,
    
   
 
