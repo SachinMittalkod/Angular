@@ -1,1 +1,20 @@
 <p>add-tocart works!</p>
+<h1>{{Names}}</h1>
+<div>
+<h1 *ngFor="let disp of name">{{disp}}</h1>
+<!-- <a routerLink="home-page">Home</a> -->
+<router-outlet></router-outlet>
+</div>
+<h2>*NgIf Demo</h2>
+<div *ngIf="userlogin; else logout" >
+<p>you have logged in</p>
+</div>
+<ng-template #logout>
+    <p>not logged in</p>
+</ng-template>
+
+<p class="switch">Switch Case</p>
+
+
+
+

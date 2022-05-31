@@ -10,8 +10,12 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
 import { FormsModule } from '@angular/forms';
 import { AddTocartComponent } from './Components/add-tocart/add-tocart.component';
-import { RemovecartComponent } from './Components/removecart/removecart.component';
-import { DefaultChildComponent } from './Components/default-child/default-child.component';
+
+
+
+
+
+
 
 
 @NgModule({
@@ -22,8 +26,9 @@ import { DefaultChildComponent } from './Components/default-child/default-child.
     AboutUsComponent,
     PagenotfoundComponent,
     AddTocartComponent,
-    RemovecartComponent,
-    DefaultChildComponent,
+   
+  
+
   ],
   imports: [
     BrowserModule,
