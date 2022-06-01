@@ -14,11 +14,15 @@ user=[
   {id:3, name:'mark', location:'Pune'},
   {id:4, name:'om', location:'Mysore'},
 ]
+title='Hello Angular'
+today=Date();
   constructor() { }
 
   ngOnInit(): void {
   }
-  
-
-
+  displayval:string='';
+  onchanging(val:string){
+console.log(val);
+this.displayval=val;
+  }
 }

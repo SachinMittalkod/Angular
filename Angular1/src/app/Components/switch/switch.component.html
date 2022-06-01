@@ -2,6 +2,7 @@
 <select [(ngModel)]="users">
     <option *ngFor="let use of user" [ngValue]="use">{{use.name}}</option>
 </select>
+
 <div [ngSwitch]="users.id">
 <p *ngSwitchCase="1">{{users.location}}</p>
 <p *ngSwitchCase="2">{{users.location}}</p>
@@ -9,3 +10,47 @@
 <p *ngSwitchCase="4">{{users.location}}</p>
 <p *ngSwitchDefault="">Please select</p>
 </div>
+
+<h3>Pipe</h3>
+<p>{{today | date}}</p>
+<p>{{title | lowercase}}</p>
+<p>{{title | uppercase}}</p>
+<p>{{title | titlecase}}</p>
+<p>{{user | json}}</p>
+
+<!-- <table class="table table-bordered">
+    <tr class="bg-primary">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Location</th>
+    
+    </tr>
+    <tr *ngFor="let using of users">
+        <td>{{users.id}}</td>
+        <td>{{users.name}}</td>
+        <td>{{users.location}}</td>
+    </tr>
+</table> -->
+
+
+<input type="text" #box (keyup)="onchanging(box.value)">
+
+<p>{{displayval}}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
