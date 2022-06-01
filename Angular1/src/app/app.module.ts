@@ -11,6 +11,7 @@ import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.co
 import { FormsModule } from '@angular/forms';
 import { AddTocartComponent } from './Components/add-tocart/add-tocart.component';
 import { ServiceComponent } from './Components/service/service.component';
+import { SwitchComponent } from './Components/switch/switch.component';
 
 
 
@@ -28,6 +29,7 @@ import { ServiceComponent } from './Components/service/service.component';
     PagenotfoundComponent,
     AddTocartComponent,
     ServiceComponent,
+    SwitchComponent,
    
   
 

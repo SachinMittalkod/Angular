@@ -8,12 +8,15 @@ import { CartComponent } from './Components/cart/cart.component';
 import { HomePageComponent } from './Components/home-page/home-page.component';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
 import { ServiceComponent } from './Components/service/service.component';
+import { SwitchComponent } from './Components/switch/switch.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home-page', pathMatch:'full'},
+ 
   {path:'home-page' , component:HomePageComponent},
   {path:'service', component:ServiceComponent},
-  {path:'about', loadChildren:() => import('./Components/about-us/aboutus.module').then(k=>k.AboutusModule)},
+  {path:'switch', component:SwitchComponent},
+  {path:'aboutus', loadChildren:() => import('./Components/about-us/aboutus.module').then(k=>k.AboutusModule)},
   {path:'products',  loadChildren:() => import('./Components/product/product.module').then(m=>m.ProductModule)},
 
   {path:'cart', component:CartComponent, children:[
