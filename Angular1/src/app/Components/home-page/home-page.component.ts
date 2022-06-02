@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomePageComponent implements OnInit {
   title = 'Angular1';
   message:string='hello'
-  event:string='dude'
+  event:string=''
   constructor() { }
 
   ngOnInit(): void {

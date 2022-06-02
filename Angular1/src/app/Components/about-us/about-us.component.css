@@ -3,5 +3,15 @@ h1{
     
 }
 h1:hover{
-    background-color: blue;
+    font-size: xx-large;
+    /* background-color: blue; */
+    transition-delay: 1000ms;
+}
+button{
+    font-size: large;
+    border-radius: 5px;
+    margin: 40px 50px;
+}
+.button:hover{
+background-color: brown;
 }

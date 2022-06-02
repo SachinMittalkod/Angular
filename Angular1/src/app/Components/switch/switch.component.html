@@ -1,6 +1,6 @@
 <p>Select Employee</p>
-<select [(ngModel)]="users">
-    <option *ngFor="let use of user" [ngValue]="use">{{use.name}}</option>
+<select [(ngModel)]="users" >
+    <option *ngFor="let use of user" [ngValue]="use" >{{use.name}}</option>
 </select>
 
 <div [ngSwitch]="users.id">

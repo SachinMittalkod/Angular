@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-switch',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SwitchComponent implements OnInit {
 
-  users:any=[];
+
+ users:any=[];
 user=[
   {id:1, name:'sachin', location:'Banglore'},
   {id:2, name:'john', location:'Mumbai'},
@@ -25,4 +27,6 @@ today=Date();
 console.log(val);
 this.displayval=val;
   }
-}
+  
+  }
+
