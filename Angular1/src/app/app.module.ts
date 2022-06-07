@@ -10,10 +10,9 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
 import { FormsModule } from '@angular/forms';
 import { AddTocartComponent } from './Components/add-tocart/add-tocart.component';
-import { ServiceComponent } from './Components/service/service.component';
+
 import { SwitchComponent } from './Components/switch/switch.component';
-
-
+import { ParameterComponent } from './Components/parameter/parameter.component';
 
 
 
@@ -28,8 +27,8 @@ import { SwitchComponent } from './Components/switch/switch.component';
     AboutUsComponent,
     PagenotfoundComponent,
     AddTocartComponent,
-    ServiceComponent,
     SwitchComponent,
+    ParameterComponent,
    
   
 

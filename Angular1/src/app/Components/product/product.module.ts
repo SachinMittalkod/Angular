@@ -6,6 +6,7 @@ import { ProductdetailsComponent } from './productss/productdetails.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { EditproductComponent } from './editproduct/editproduct.component';
 import { DeleteProductComponent } from './delete-product/delete-product.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { DeleteProductComponent } from './delete-product/delete-product.componen
     AddProductComponent,
     EditproductComponent,
     DeleteProductComponent,
+    UserComponent,
     
   ],
   imports: [

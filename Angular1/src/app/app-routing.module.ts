@@ -8,11 +8,13 @@ import { CartComponent } from './Components/cart/cart.component';
 // import { DefaultChildComponent } from './Components/default-child/default-child.component';
 import { HomePageComponent } from './Components/home-page/home-page.component';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
+import { ParameterComponent } from './Components/parameter/parameter.component';
 import { ServiceComponent } from './Components/service/service.component';
 import { SwitchComponent } from './Components/switch/switch.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home-page', pathMatch:'full'},
+  {path:'para/:id/:name', component:ParameterComponent},
  
   {path:'home-page' , component:HomePageComponent},
   {path:'service', component:ServiceComponent},
