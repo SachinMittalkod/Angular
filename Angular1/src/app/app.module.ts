@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -13,6 +14,15 @@ import { AddTocartComponent } from './Components/add-tocart/add-tocart.component
 
 import { SwitchComponent } from './Components/switch/switch.component';
 import { ParameterComponent } from './Components/parameter/parameter.component';
+import { EmployeeComponent } from './Components/Employee/employee/employee.component';
+import { StudentComponent } from './Components/student/student.component';
+import { AssignInitialPipe } from './Components/SharedModule/assign-initial.pipe';
+import { ParentComponent } from './Components/parent/parent.component';
+import { ChildComponent } from './Components/child/child.component';
+import { FilterComponent } from './Components/filter/filter.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { HighlightDirective } from './Components/highlight.directive';
+
 
 
 
@@ -29,17 +39,23 @@ import { ParameterComponent } from './Components/parameter/parameter.component';
     AddTocartComponent,
     SwitchComponent,
     ParameterComponent,
-   
-  
+    EmployeeComponent,
+    StudentComponent,
+    AssignInitialPipe,
+    ParentComponent,
+    ChildComponent,
+    FilterComponent,
+    HighlightDirective,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    Ng2SearchPipeModule
   ],
-  providers: [],
+  // providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

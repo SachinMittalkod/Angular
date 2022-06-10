@@ -1,0 +1,25 @@
+<p>filter works!</p>
+<input type="text" name="searchText" [(ngModel)]="searchtext" placeholder="Enter the search">
+<table class="table-bordered">
+    <thead>
+      <tr>
+        <th>EmpID</th>
+        <th>EmpName</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items | filter:searchtext">
+        <td >{{item.EmpID}}</td>
+        <td>{{item.EmpName}}</td>
+        <td>{{item.age}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3> Custom Directives</h3>
+  <p appHighlight>Highlight me!</p>
+<div #emptydiv>
+
+</div>
+  <button >Click to get Comment Section</button>

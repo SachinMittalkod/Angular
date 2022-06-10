@@ -1,1 +1,19 @@
 hello Angular
+==>observable is a asynchronous programming
+==>if any change in data observable give the notification
+==>observer:- it will keep the track of change in data
+==>of method is used for type casting(array of data into Observable)
+==>if you ad some more data in future then it must get reflected so observable is used
+==>x=>x.id===id in line function
+==>'filter' will iterate through all the records & go to all data but 'find' search for particular data
+==>In angular Constructors are generally used for dependency injection
+==>in angualar  the constrctor used to inject the dependenciess
+   ex)constrctor(private user:userService){}
+=> Data from parent to child use @input() in child component
+=> Data from child to parent use @output()
+=>Custom Directives used for change the DOM 
+=>Add ElementRef in the directive's constructor() to inject a reference to the
+  host DOM element, the element to which you apply appHighlight.
+=> ElementRef used to access DOM element and manipulate it
+  & it has native element property that contains all the properties of DOM element
+  ex) in react document.getelementbyId("hello");

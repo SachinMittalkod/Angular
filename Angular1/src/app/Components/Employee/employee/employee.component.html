@@ -1,0 +1,26 @@
+<h2>Service</h2>
+<table class="table-bordered">
+    <thead>
+      <tr>
+        <th>EmpId</th>
+        <th>EmpName</th>
+        <th>Location</th>
+        <th>Gender</th>
+        <th>isActive</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of details">
+        <td >{{emp.id}}</td>
+        <!-- <td>{{emp.name|uppercase|assignInitial:emp.gender}}</td> -->
+        <td>{{emp.name}}</td>
+        <td>{{emp.location|titlecase}}</td>
+        <td>{{emp.gender}}</td>
+        <td>{{emp.isActive?'Yes':'No'}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <a routerLink="student">Student data</a>
+
+  <router-outlet></router-outlet>
+
