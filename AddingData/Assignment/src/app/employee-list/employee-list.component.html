@@ -1,0 +1,24 @@
+<p>employee-list works!</p>
+
+<div>
+    <table class="table-bordered">
+        <thead>
+    <tr>
+        <th>EmpId</th>
+        <th>EmpName</th>
+        <th>ProjectID</th>
+        <th>Angular proficiency</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let emp of employee">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.projectid}}</td>
+            <td>{{emp.AngularProficiency | proficiency: emp.AngularProficiency }}</td>
+   
+    </tr>
+    </tbody>
+    </table>
+</div>
+
