@@ -8,6 +8,7 @@
         <th>EmpName</th>
         <th>ProjectID</th>
         <th>Angular proficiency</th>
+        <th>Rating review</th>
     </tr>
     </thead>
     <tbody>
@@ -15,8 +16,9 @@
             <td>{{emp.id}}</td>
             <td>{{emp.name}}</td>
             <td>{{emp.projectid}}</td>
-            <td>{{emp.AngularProficiency | proficiency: emp.AngularProficiency }}</td>
-   
+            <!-- <td>{{emp.AngularProficiency | proficiency: emp.AngularProficiency }}</td> -->
+            <td>{{emp.AngularProficiency}}</td>
+            <app-rating [rating]="emp.AngularProficiency "></app-rating>
     </tr>
     </tbody>
     </table>

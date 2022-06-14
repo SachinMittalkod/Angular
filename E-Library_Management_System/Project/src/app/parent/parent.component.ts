@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
   
-  name:string="passing from parent";
-   
-  constructor() { }
+mydata:string="Data from Parent"
+  constructor() {
 
+   }
+ 
   ngOnInit(): void {
   }
-
+  
 }

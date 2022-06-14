@@ -7,10 +7,24 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
-  @Input() uname:string;
-  constructor() { }
+@Input() newdata:string;
+  constructor() {
+ 
+   }
 
   ngOnInit(): void {
+  
+  }
+  oncall(){
+    console.log(this.newdata);
   }
 
 }
+
+
+
+
+
+
+
+
