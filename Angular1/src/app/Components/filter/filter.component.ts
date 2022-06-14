@@ -16,34 +16,14 @@ export class FilterComponent implements OnInit {
 items=[{EmpID: 1, EmpName:'sachin', age: 24, location: 'Banglore'},
 {EmpID: 2, EmpName:'ram', age: 26, location: 'Delhi'},
 {EmpID: 3, EmpName:'saurav', age: 24, location: 'Mumbai'},
-{EmpID: 4, EmpName:'kumar', age: 45, location: 'Banglore'}]
-  ///////////////////////////////////////////
-  // employee:EmpDetails;
-  // @Output() addemployeeRecord: EventEmitter<EmpDetails> =
-  // new EventEmitter<EmpDetails>();
-  // constructor() {
-  //   this.employee = new EmpDetails();
-  //  }
+{EmpID: 4, EmpName:'kumar', age: 45, location: 'Banglore'},
+{EmpID: 5, EmpName:'Aditya', age: 27, location: 'Gujarat'},
+{EmpID: 6, EmpName:'Aditi', age: 29, location: 'Banglore'}]
+ 
+  
   ngOnInit(): void {
     
   }
-
-  //  public addEmployee() {
-  //   const data = {
-  //     id: this.employee.id,
-  //     employeeName: this.employee.employeeName,
-  //     projectId: this.employee.projectId,
-  //     angularProficiency: +this.employee.angularProficiency,
-  //   };
-  //   if (data.angularProficiency > 5 ) {
-  //     alert('Enter a valid Information');
-  //     return;
-  //   }
-
-  //   this.addemployeeRecord.emit(data);
-  // }
-   
-
 
   }
   

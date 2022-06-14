@@ -1,11 +1,10 @@
-import { transformAll } from '@angular/compiler/src/render3/r3_ast';
+
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[appHighlight]'
 })
 export class HighlightDirective {
-
   constructor(private ref:ElementRef) {
     // this.ref.nativeElement.style.backgroundColor = 'yellow';
   
@@ -22,7 +21,8 @@ export class HighlightDirective {
     let eve=this.ref.nativeElement;
     eve.style.backgroundColor = 'red';
     eve.style.color='blue';
-    this.highlight('50px');
+    eve.style. fontweight= 'bold';
+    this.highlight('80px');
     
     // this.highlight('20s')
    }

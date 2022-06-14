@@ -23,9 +23,6 @@ import { FilterComponent } from './Components/filter/filter.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HighlightDirective } from './Components/highlight.directive';
 import { StoredataComponent } from './Components/storedata/storedata.component';
-import { EmpAddComponent } from './AddEmpdata/emp-add/emp-add.component';
-import { EmpShowDataComponent } from './AddEmpdata/emp-show-data/emp-show-data.component';
-
 
 
 
@@ -50,8 +47,7 @@ import { EmpShowDataComponent } from './AddEmpdata/emp-show-data/emp-show-data.c
     FilterComponent,
     HighlightDirective,
     StoredataComponent,
-    EmpAddComponent,
-    EmpShowDataComponent,
+    
 
   ],
   imports: [

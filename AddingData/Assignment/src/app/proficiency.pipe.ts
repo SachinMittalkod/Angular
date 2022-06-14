@@ -7,11 +7,20 @@ export class ProficiencyPipe implements PipeTransform {
 
   transform(value: number, AngularProficiency:number): string {
 
-     if(AngularProficiency >2){
+     if(AngularProficiency  ==3 || AngularProficiency <4){
       return 'Good';
+      
      }
-     else if(AngularProficiency >3){
-      return 'excellent' 
+    
+     else if(AngularProficiency==4 || AngularProficiency < 5){
+      return 'very good'
+     }
+     else if(AngularProficiency==5){
+      return 'excellent'
+     }
+   
+     else{
+      return 'enter out of 5'
      }
 
     return null;
