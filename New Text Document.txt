@@ -17,3 +17,26 @@ hello Angular
 => ElementRef used to access DOM element and manipulate it
   & it has native element property that contains all the properties of DOM element
   ex) in react document.getelementbyId("hello");
+  =>EventEmitter call the parent function from child
+
+Components Life Cycle
+->constrctor
+->ngOnchanges
+->ngOninit
+->ng
+
+constrctor-> can only be used for dependency injection
+ngOninit 
+  -> should used to handle initial logic that need to be executed only once
+  -> Handled by angular framework
+
+Types of forms in Angular
+1)Templet driven forms
+2)Reactive forms(Also known as Dynamic forms)
+
+1)Templet Driven forms
+
+to use Templete variable use #variableName
+
+
+

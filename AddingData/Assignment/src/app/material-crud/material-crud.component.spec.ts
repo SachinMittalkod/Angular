@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParentComponent } from './parent.component';
+import { MaterialCrudComponent } from './material-crud.component';
 
-describe('ParentComponent', () => {
-  let component: ParentComponent;
-  let fixture: ComponentFixture<ParentComponent>;
+describe('MaterialCrudComponent', () => {
+  let component: MaterialCrudComponent;
+  let fixture: ComponentFixture<MaterialCrudComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ParentComponent ]
+      declarations: [ MaterialCrudComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ParentComponent);
+    fixture = TestBed.createComponent(MaterialCrudComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

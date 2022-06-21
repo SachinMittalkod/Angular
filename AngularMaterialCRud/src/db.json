@@ -1,0 +1,69 @@
+{
+  "Employee": [
+    {
+      "id": 4,
+      "name": "Smitha",
+      "designation": "Data Testing Engineer",
+      "department": "DTS",
+      "Gender": "Female",
+      "sales": "Achieved"
+    },
+    {
+      "name": "Amit Sonar",
+      "designation": "Soft Developer",
+      "department": "Technology",
+      "Gender": "Male",
+      "sales": "Achieved",
+      "id": 6
+    },
+    {
+      "name": "m@gmail.com",
+      "designation": "fgfdg",
+      "department": "gfdg",
+      "Gender": "m",
+      "id": 7
+    },
+    {
+      "name": "dsfdsf",
+      "designation": "fdsfds",
+      "department": "fdf",
+      "Gender": "male",
+      "id": 8
+    },
+    {
+      "name": "dsd",
+      "designation": "dfdsftiondsd",
+      "department": "dfdsfds",
+      "Gender": "dsfds",
+      "id": 9
+    },
+    {
+      "name": "fdsfds",
+      "designation": "Efddfds",
+      "department": "dfdsfds",
+      "Gender": "MAle",
+      "id": 10
+    },
+    {
+      "name": "Sam",
+      "designation": "Manager",
+      "department": "HR",
+      "Gender": "Male",
+      "id": 11
+    },
+    {
+      "name": "Aniket",
+      "designation": "SE-1",
+      "department": "Soft Eng",
+      "Gender": "Male",
+      "id": 12
+    },
+    {
+      "name": "sachin",
+      "designation": "Engineer",
+      "department": "tech",
+      "Gender": "Male",
+      "id": 13
+    }
+  ]
+}
