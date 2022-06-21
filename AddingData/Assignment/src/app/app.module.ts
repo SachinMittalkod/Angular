@@ -12,8 +12,9 @@ import { ProficiencyPipe } from './proficiency.pipe';
 import { RatingComponent } from './rating/rating.component';
 import { TempleteDrivenFormComponent } from './templete-driven-form/templete-driven-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialComponent } from './material/material.component';
-import { MaterialCrudComponent } from './material-crud/material-crud.component';
+// import { MaterialComponent } from './material/material.component';
+// import { MaterialCrudComponent } from './material-crud/material-crud.component';
+// import { MaterialModuleModule } from './material-module/material-module.module';
 
 
 
@@ -27,8 +28,8 @@ import { MaterialCrudComponent } from './material-crud/material-crud.component';
     ProficiencyPipe,
     RatingComponent,
     TempleteDrivenFormComponent,
-    MaterialComponent,
-    MaterialCrudComponent, 
+  
+ 
   ],
   imports: [
     BrowserModule,
@@ -36,6 +37,7 @@ import { MaterialCrudComponent } from './material-crud/material-crud.component';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    
    
   
   ],
