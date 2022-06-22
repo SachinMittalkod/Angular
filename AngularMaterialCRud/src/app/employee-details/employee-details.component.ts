@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Employee } from '../employee.model';
 import { EmployeeService } from '../employee.service';
-
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { DialogComponent } from '../dialog/dialog.component';
 @Component({
   selector: 'app-employee-details',
   templateUrl: './employee-details.component.html',
@@ -11,7 +12,7 @@ import { EmployeeService } from '../employee.service';
 export class EmployeeDetailsComponent implements OnInit {
 emp: Employee={id:0,name:'',designation:'',department:'',Gender:'',sales:''}
 isDataLoading=true;
-  constructor(private empService:EmployeeService,private route:ActivatedRoute,private router:Router) { }
+  constructor(private empService:EmployeeService,private route:ActivatedRoute,private router:Router, private dialog:MatDialog) { }
 
   ngOnInit(): void {
     this.getEmployee(this.route.snapshot.params['id']);
@@ -38,4 +39,31 @@ isDataLoading=true;
     })
   }
 
+  openDialog() {
+    this.dialog.open(DialogComponent, {
+      width:'50%'
+      
+    });
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

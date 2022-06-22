@@ -42,4 +42,8 @@ export class EmployeeService {
     const url=`${apiUrl}/${id}`;
     return this.http.delete<Employee>(url).pipe(catchError(this.handleError));
   }
+  public editemp(id:number, empForm:any){
+    const url=`${apiUrl}/${id}`;
+    return this.http.patch<Employee>(url,empForm).pipe(catchError(this.handleError));
+  }
 }

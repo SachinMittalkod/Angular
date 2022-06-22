@@ -3,51 +3,30 @@
     {
       "id": 4,
       "name": "Smitha",
-      "designation": "Data Testing Engineer",
-      "department": "DTS",
+      "designation": "Data Testing Enginees",
+      "department": "DT",
       "Gender": "Female",
       "sales": "Achieved"
     },
     {
       "name": "Amit Sonar",
-      "designation": "Soft Developer",
-      "department": "Technology",
+      "designation": "Soft Developeer",
+      "department": "Technologies",
       "Gender": "Male",
       "sales": "Achieved",
       "id": 6
     },
     {
       "name": "m@gmail.com",
-      "designation": "fgfdg",
-      "department": "gfdg",
+      "designation": "asdsad",
+      "department": "asdasd",
       "Gender": "m",
       "id": 7
     },
     {
-      "name": "dsfdsf",
-      "designation": "fdsfds",
-      "department": "fdf",
-      "Gender": "male",
-      "id": 8
-    },
-    {
-      "name": "dsd",
-      "designation": "dfdsftiondsd",
-      "department": "dfdsfds",
-      "Gender": "dsfds",
-      "id": 9
-    },
-    {
-      "name": "fdsfds",
-      "designation": "Efddfds",
-      "department": "dfdsfds",
-      "Gender": "MAle",
-      "id": 10
-    },
-    {
       "name": "Sam",
-      "designation": "Manager",
-      "department": "HR",
+      "designation": "Managerr",
+      "department": "HRr",
       "Gender": "Male",
       "id": 11
     },
@@ -59,11 +38,18 @@
       "id": 12
     },
     {
-      "name": "sachin",
-      "designation": "Engineer",
+      "name": "aditi",
+      "designation": "Technology",
       "department": "tech",
-      "Gender": "Male",
+      "Gender": "Female",
       "id": 13
+    },
+    {
+      "name": "aditya",
+      "designation": "se",
+      "department": "tech",
+      "Gender": "male",
+      "id": 14
     }
   ]
 }
