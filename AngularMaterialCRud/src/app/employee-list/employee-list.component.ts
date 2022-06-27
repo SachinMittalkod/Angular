@@ -20,8 +20,7 @@ isDataLoading=true;
 displayedColumn: string[] = ['name', 'designation', 'department', 'Gender'];
 dataSource: MatTableDataSource<any>;
 
-@ViewChild(MatPaginator) paginator!: MatPaginator;
-@ViewChild(MatSort) sort!: MatSort;
+
 ///////////////////////////////
   constructor(private empService:EmployeeService) { }
 
@@ -30,7 +29,7 @@ dataSource: MatTableDataSource<any>;
       this.data=response;
       console.log(this.data);
       this.isDataLoading=false;
-    },err=>{
+    }, err=>{
       console.log(err);
       this.isDataLoading=false;
     })

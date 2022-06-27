@@ -24,6 +24,7 @@ export class DialogComponent implements OnInit {
     });
     this.empForm.get('name').disable();
     this.empForm.get('Gender').disable();
+    // this.empForm.get('designation').disable();
     
     this.getEmployee(this.route.snapshot.params['id']);
   }

@@ -39,12 +39,12 @@ isDataLoading=true;
     })
   }
 
-  openDialog() {
-    this.dialog.open(DialogComponent, {
-      width:'50%'
+  // openDialog() {
+  //   this.dialog.open(DialogComponent, {
+  //     width:'50%'
       
-    });
-  }
+  //   });
+  // }
 
 }
 

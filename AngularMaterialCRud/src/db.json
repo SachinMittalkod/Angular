@@ -18,7 +18,7 @@
     },
     {
       "name": "m@gmail.com",
-      "designation": "asdsad",
+      "designation": "asdsads",
       "department": "asdasd",
       "Gender": "m",
       "id": 7
@@ -38,16 +38,9 @@
       "id": 12
     },
     {
-      "name": "aditi",
-      "designation": "Technology",
-      "department": "tech",
-      "Gender": "Female",
-      "id": 13
-    },
-    {
       "name": "aditya",
-      "designation": "se",
-      "department": "tech",
+      "designation": "asdsada",
+      "department": "sadasdasdsad",
       "Gender": "male",
       "id": 14
     }
