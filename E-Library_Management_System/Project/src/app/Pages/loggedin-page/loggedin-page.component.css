@@ -9,10 +9,7 @@ button{
 h2{
     text-align: center;
 }
-a{
-    
 
-}
 a:hover{
     color: black;
     background-color: rgb(222, 230, 234);
@@ -20,7 +17,7 @@ a:hover{
 a {
     position:relative;
     display: inline-block;
-    float: left;
+    /* float: left; */
     padding: 12px;
     color: white;
     text-decoration: none;
@@ -126,3 +123,11 @@ body {
   padding: 0.8375em 0;
 }
 
+.loggedin{
+  background-image: url('./alfons-morales-YLSwjSy7stw-unsplash.jpg');
+  width: 100vw;
+  height: 100vh;
+}
+h2{
+  color: white;
+}

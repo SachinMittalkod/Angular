@@ -4,6 +4,7 @@ import { AdminLoginComponent } from './Pages/admin-login/admin-login.component';
 import { LoggedinPageComponent } from './Pages/loggedin-page/loggedin-page.component';
 import { MenuComponent } from './Pages/menu/menu.component';
 import { PagenotfoundComponent } from './Pages/pagenotfound/pagenotfound.component';
+import { RegisterPageComponent } from './Pages/register-page/register-page.component';
 import { UserloginComponent } from './Pages/userlogin/userlogin.component';
 
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'userlogin',component:UserloginComponent},  
   {path:'afterlogin', component:LoggedinPageComponent},
   {path:'adminlogin',component:AdminLoginComponent},
+  {path:'register',component:RegisterPageComponent},
   {path:'**',component:PagenotfoundComponent},
 ];
 

@@ -8,10 +8,7 @@ button{
 h2{
     text-align: center;
 }
-a{
-    
 
-}
 a:hover{
     color: black;
     background-color: rgb(226, 141, 141);
@@ -19,7 +16,7 @@ a:hover{
 a {
     position:relative;
     display: inline-block;
-    float: left;
+    /* float: left; */
     padding: 12px;
     color: white;
     text-decoration: none;
