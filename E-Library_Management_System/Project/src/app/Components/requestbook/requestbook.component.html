@@ -1,0 +1,47 @@
+
+<!-- (ngSubmit)="onFormSubmit(empForm.value)" -->
+<div class="widthad">
+    <mat-card >
+        <form [formGroup]="empForm" >
+            <h2>Request for Book</h2>
+            <mat-form-field>
+                <input matInput placeholder="Enter Book Id" formControlName="id">
+               
+                <mat-error>
+                    <span *ngIf="!empForm.get('id')?.valid && empForm.get('id')?.touched">Book id Required</span>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Enter Book Name" formControlName="BookName">
+               
+                <mat-error>
+                    <span *ngIf="!empForm.get('BookName')?.valid && empForm.get('BookName')?.touched">Name Required</span>
+                </mat-error>
+            </mat-form-field>
+
+          
+            <mat-form-field>
+                <input matInput placeholder="Enter Author Name" formControlName="Author">
+            
+                <mat-error>
+                    <span *ngIf="!empForm.get('Author')?.valid && empForm.get('Author')?.touched">Author name Required</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="date"  formControlName="Date">
+                <mat-error>
+                    <span *ngIf="!empForm.get('Date')?.valid && empForm.get('Date')?.touched">Department Required</span>
+                </mat-error>
+              </mat-form-field>
+          
+
+            
+            <div class="button-row">
+                <button mat-flat-button color="primary" type="submit" [disabled]="!empForm.valid"><span class="material-symbols-sharp">
+                    send
+                    </span></button>
+            </div>
+        </form>
+    </mat-card>
+</div>

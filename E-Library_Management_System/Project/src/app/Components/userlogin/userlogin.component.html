@@ -1,0 +1,39 @@
+<!-- user login page -->
+<div class="login">
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-icon  >person</mat-icon>
+      <mat-card-title>User Login </mat-card-title>
+    </mat-card-header>
+   
+    <form class="example-form" [formGroup]="data">
+     
+      <mat-card-content>
+       
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Username" formControlName="username">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" type="password" formControlName="password">
+        </mat-form-field>
+      </mat-card-content>
+    
+      <button mat-stroked-button color="accent" class="btn-block"  routerLink='/afterlogin'>Log in</button>
+      
+      <!-- <h4>Don't have Account? <a [routerLink]="['/register']"> Sign Up</a></h4>  -->
+      <h4> Don't have Account?</h4>
+      <button mat-stroked-button color="primary" class="btn-block"  routerLink='/register'>Sign Up</button>
+     
+    </form> 
+  </mat-card>
+  <router-outlet></router-outlet>
+</div>
+
+</div>
+
+
+
+
+
+

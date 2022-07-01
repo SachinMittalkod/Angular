@@ -1,0 +1,7 @@
+.page{
+    background-image: url('./pagenotfound.png');
+    background-position: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

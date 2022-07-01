@@ -1,0 +1,32 @@
+{
+"Books":[
+    {
+        "id":1,
+        "BookName":"Book of lost names",
+        "author":"kristin harmel",
+        "imageUrl": "/assets/images/01.jpg"
+
+    },
+    {
+        "id":2,
+        "BookName":"The Book of life",
+        "author":"Joseph",
+        "imageUrl": "/assets/images/02.jpg"
+
+    },
+    {
+        "id":3,
+        "BookName":"Wings of Fire",
+        "author":"Abdulkalam",
+        "imageUrl": "/assets/images/03.jpg"
+
+    },
+    {
+        "id":4,
+        "BookName":"Hidden World",
+        "author":"Ritaj",
+        "imageUrl": "/assets/images/04.jpg"
+
+    }
+]
+}
