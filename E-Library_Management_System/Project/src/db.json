@@ -70,6 +70,13 @@
     }
   ],
   "signupuser": [
-    {}
-  ]
+    {
+      "id": 3,
+      "username": "shivam",
+      "email": "shivam@gmail.com",
+      "mobileno": "123456489",
+      "createpassword": "sachin1234"
+    }
+  ],
+  ""
 }

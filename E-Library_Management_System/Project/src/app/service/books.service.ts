@@ -10,7 +10,7 @@ import { requestbook } from '../Model/requestbook.model';
 export class BooksService {
   baseUrl='http://localhost:3000/Books';
   reqbookurl='http://localhost:3000/reqbook'
-  signupurl='http://localhost:3000/signup'
+  signupurl='http://localhost:3000/signupuser'
   constructor(private http:HttpClient) { }
   user:any;
   getusers(){
