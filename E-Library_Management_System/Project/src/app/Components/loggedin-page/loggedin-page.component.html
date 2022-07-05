@@ -1,17 +1,63 @@
 <div class="loggedin">
-<h2>Welcome to User Profile</h2>
-<mat-toolbar color="warn" class="mat-elevation-z8">
+<!-- <h2>Welcome to User Profile</h2> -->
+<!-- <mat-toolbar color="warn" class="mat-elevation-z8">
  <div class="spacer"></div>
- <!-- <span class="example-spacer"></span>
- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-   <mat-icon>favorite</mat-icon>
- </button>
- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-  <mat-icon>share</mat-icon>
-</button> -->
-<a mat-button routerLink='/booklist'>Mybooks</a>
+
+
+  
+
+<div class="container"><a mat-button routerLink='/booklist'>Mybooks</a>
 <a mat-button (click)="openDialog()">Request for Book</a>
 <a mat-button>Book Issue Final date</a>
 <a mat-button>Logout</a>
-</mat-toolbar>
 </div>
+
+</mat-toolbar>
+</div> -->
+
+<div class="background">
+  <mat-toolbar color="primary" class="mat-elevation-z4">
+   
+      <button type="button" mat-icon-button (click)="drawer.toggle()" color="">
+        <mat-icon>menu</mat-icon>
+      </button>
+  
+    
+      <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <span class="material-symbols-sharp">
+              supervisor_account
+              </span>
+       
+      </button> -->
+ 
+   
+  
+      <span>User Panel</span>
+      <span class="example-spacer"></span>
+      
+  
+     
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" >
+        <mat-icon routerLink="/home"><span class="material-symbols-outlined"  >
+            logout
+            </span></mat-icon>
+      </button>
+      
+     <!-- <button mat-button [matMenuTriggerFor]="afterMenu"><mat-icon>account_box</mat-icon></button> -->
+  <mat-menu #afterMenu="matMenu" xPosition="after">
+    <button mat-menu-item [routerLink]="['/viewrequest']" routerLinkActive="router-link-active" >Requests</button>
+    <!-- <button mat-menu-item>Item 2</button> -->
+  </mat-menu>
+    </mat-toolbar>
+    <mat-sidenav-container class="example-container">
+      <mat-sidenav #drawer mode="side" closed  class="sidenav" >
+        <mat-nav-list class="links">
+          <a mat-list-item routerLink='/booklist'>Mybooks</a>
+          <a mat-list-item (click)="openDialog()">Request for book</a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+    </div>

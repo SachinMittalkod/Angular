@@ -23,6 +23,10 @@ import { BooklistComponent } from './booklist/booklist.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { RequestbookComponent } from './Components/requestbook/requestbook.component';
+import { AdminLandingPageComponent } from './Components/admin-landing-page/admin-landing-page.component';
+import { ViewRequestComponent } from './Components/view-request/view-request.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { AddbookComponent } from './Components/addbook/addbook.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +43,9 @@ import { RequestbookComponent } from './Components/requestbook/requestbook.compo
     NavbarComponent,
     BooklistComponent,
     RequestbookComponent,
+    AdminLandingPageComponent,
+    ViewRequestComponent,
+    AddbookComponent,
 
   ],
   imports: [
@@ -49,7 +56,8 @@ import { RequestbookComponent } from './Components/requestbook/requestbook.compo
     ReactiveFormsModule,
     MaterialModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    Ng2SearchPipeModule
     
   ],
   providers: [],

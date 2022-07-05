@@ -1,0 +1,18 @@
+table {
+    width: 100%;
+  }
+  h1{
+    text-align: center;
+  }
+  thead{
+    text-align: center;
+    width: 80px;
+  }
+  tr{
+    text-align: center;
+  }
+  .width{
+    width: 80%;
+    margin-left: 10%;
+
+  }

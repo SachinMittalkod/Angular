@@ -1,0 +1,94 @@
+ <!-- <div> 
+    <br>
+      <div class="container">
+          <div class="container">
+       
+      </div>
+      <br>
+      <div class="container">
+        <div fxLayout="row" fxLayoutAlign="center center" class="content">
+          <mat-card class="card" >
+            <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+              <h3>Book Lists</h3>
+            </mat-card-title>
+         
+            <mat-card-content>
+                <div class="example-container mat-elevation-z8">
+                    <mat-table #table [dataSource]="data">
+                 
+                    <ng-container matColumnDef="action">
+                      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+                      <mat-cell *matCellDef="let element">
+                        
+                       
+                      </mat-cell>
+                    </ng-container>
+                   
+
+                    <ng-container matColumnDef="BookName">
+                      <mat-header-cell *matHeaderCellDef> Book Name </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.BookName}} </mat-cell>
+                    </ng-container>
+                      <ng-container matColumnDef="Author">
+                        <mat-header-cell *matHeaderCellDef> Author Name </mat-header-cell>
+                        <mat-cell *matCellDef="let element"> {{element.Author}} </mat-cell>
+                      </ng-container>
+                      <ng-container matColumnDef="Date">
+                        <mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
+                        <mat-cell *matCellDef="let element"> {{element.Date}} </mat-cell>
+                      </ng-container>
+                      <mat-card-actions>
+                    
+                    </mat-card-actions>
+                
+                    
+
+                     
+                        
+                    
+                      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                    </mat-table>
+                    
+                  </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>  -->
+
+
+<h1>User Requests</h1>
+  
+  <div class="width">
+    <table class="table-bordered">
+        <thead class="thead-dark">
+    <tr>
+ 
+        <th>Id</th>
+        <th>BookName</th>
+        <th>Author</th>
+        <th>Date</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let emp of book"  >
+     
+    
+            <td>{{emp.id}}</td>
+            <td>{{emp.BookName}}</td>
+            <td>{{emp.Author}}</td>
+            <td>{{emp.Date}}</td>
+            
+    </tr>
+    </tbody>
+    </table>
+</div>
+
+  
+  
+  
+
+

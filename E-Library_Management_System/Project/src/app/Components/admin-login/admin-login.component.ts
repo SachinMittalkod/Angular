@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-admin-login',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-login.component.css']
 })
 export class AdminLoginComponent implements OnInit {
-
+data:FormGroup;
   constructor() { }
 
   ngOnInit(): void {

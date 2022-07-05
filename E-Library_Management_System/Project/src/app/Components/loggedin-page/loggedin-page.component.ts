@@ -16,7 +16,7 @@ export class LoggedinPageComponent implements OnInit {
   }
   openDialog() {
     this.dialog.open(RequestbookComponent, {
-      height:'500px'
+      height:'550px'
     
     });
   }

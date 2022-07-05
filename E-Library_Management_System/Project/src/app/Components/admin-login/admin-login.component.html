@@ -1,32 +1,33 @@
 
-<!-- user login page -->
-<div class="background">
-<mat-toolbar color="warn" class="mat-elevation-z4">
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <span class="material-symbols-sharp">
-            supervisor_account
-            </span>
+<div class="login">
+  <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-icon  >person</mat-icon>
+        <mat-card-title >Admin Login</mat-card-title>
+      </mat-card-header>
      
-    </button>
-    <span>Admin Panel</span>
-    <span class="example-spacer"></span>
-    
-
-   
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" >
-      <mat-icon routerLink="/userlogin"><span class="material-symbols-outlined"  >
-          logout
-          </span></mat-icon>
-    </button>
-    
-   <button mat-button [matMenuTriggerFor]="afterMenu"><mat-icon>account_box</mat-icon></button>
-<mat-menu #afterMenu="matMenu" xPosition="after">
-  <button mat-menu-item>Requests</button>
-  <!-- <button mat-menu-item>Item 2</button> -->
-</mat-menu>
-
-  </mat-toolbar>
+      <form class="example-form" >
+       
+        <mat-card-content>
+         
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Admin Id" formControlName="adminid">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="password" type="password" formControlName="Admin Password">
+          </mat-form-field>
+        
+        </mat-card-content>
+      
+        <button mat-stroked-button color="primary" class="btn-block"  routerLink='/adminlanding'>Login</button>
+        
+        <!-- <h4>Don't have Account? <a [routerLink]="['/register']"> Sign Up</a></h4>  -->
+     
+       
+      </form> 
+    </mat-card>
+    <router-outlet></router-outlet>
   </div>
-<router-outlet></router-outlet>
-
-
+  
+  </div>

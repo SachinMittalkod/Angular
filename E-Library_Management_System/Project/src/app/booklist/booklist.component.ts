@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BooksService } from '../service/books.service';
-import { User } from './book.model';
+import { User } from '../Model/book.model';
+
 
 @Component({
   selector: 'app-booklist',
@@ -10,6 +11,7 @@ import { User } from './book.model';
 
 
 export class BooklistComponent implements OnInit {
+  term:string="";
 column=["id","BookName" ,"author" ,"imageUrl"]
   constructor(private service:BooksService) { }
 users:User[]=[];
@@ -18,5 +20,4 @@ users:User[]=[];
       this.users=response;
     })
   }
-
 }
