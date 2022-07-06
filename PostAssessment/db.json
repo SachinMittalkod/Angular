@@ -1,16 +1,42 @@
 {
-  "user":[
-      {
-   "id":1,
-   "username":"admin",
-   "password":"admin1234",
-   "role":"admin"
-  },
-  {
-      "id":2,
-      "username":"sachin",
-      "password":"sachin1234",
-      "role":"user" 
-  }
+  "user": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin1234",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "sachin",
+      "password": "sachin1234",
+      "role": "user"
+    }
+  ],
+  "bookreq": [
+    {
+      "BookName": "asdad",
+      "Author": "asdsd",
+      "Date": "2022-07-14",
+      "id": 1
+    },
+    {
+      "BookName": "asdadsad",
+      "Author": "asdsdasd",
+      "Date": "2022-07-14",
+      "id": 2
+    },
+    {
+      "BookName": "fsdfd",
+      "Author": "sdfsdf",
+      "Date": "2022-07-08",
+      "id": 3
+    },
+    {
+      "BookName": "fsdfd",
+      "Author": "sdfsdf",
+      "Date": "2022-07-08",
+      "id": 4
+    }
   ]
 }

@@ -12,6 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './Material/material/material.module';
 import { UserLandingpageComponent } from './Component/user-landingpage/user-landingpage.component';
+import { AddbookComponent } from './Component/addbook/addbook.component';
+import { ListofBooksComponent } from './Component/listof-books/listof-books.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { UserLandingpageComponent } from './Component/user-landingpage/user-land
     NavbarComponent,
     LoginComponent,
     AdminPanelComponent,
-    UserLandingpageComponent
+    UserLandingpageComponent,
+    AddbookComponent,
+    ListofBooksComponent
   ],
   imports: [
     BrowserModule,

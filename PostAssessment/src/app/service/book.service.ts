@@ -1,18 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import {Bookdata} from '../Model/reqbook.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookService {
-// isAutheticated:false;
-// user:any;
-// isAdmin=false;
-// isuser=false;
 
-// data:any;
-// respdata:any;
 user:any;
 isAuthenticated=false;
 isAdmin=false;
@@ -20,6 +16,7 @@ isUser=false;
 response:any;
 data:any;
 
+reqbookurl='http://localhost:3000/bookreq';
 
   constructor(private http:HttpClient, private router:Router) { }
 
@@ -70,12 +67,20 @@ checkRole()
     this.isAuthenticated=true;
     this.router.navigate(['/userlanding']);
   }
-
   else
   {
     alert ("Invalis user");
   }
 }
+
+public addBook(emp:any):Observable<Bookdata>{
+  return this.http.post<Bookdata>(this.reqbookurl,emp);
+}
+
+public receiveBook():Observable<any>{
+ return this.http.get<any>(this.reqbookurl);
+}
+
 }
 
 
