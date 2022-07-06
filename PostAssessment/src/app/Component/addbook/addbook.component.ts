@@ -41,7 +41,7 @@ export class AddbookComponent implements OnInit {
 this.service.addBook(datas).subscribe(respo=>{
   this.bookdetails=respo;
   if(this.bookdetails.id > 3){
-alert("you cant addd")
+alert("you cant add")
 
   }
 })
