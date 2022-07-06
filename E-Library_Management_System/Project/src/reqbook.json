@@ -1,22 +1,5 @@
 {
   "reqbook": [
-    {
-      "id": "12",
-      "BookName": "sads",
-      "Author": "sadsd",
-      "Date": "2022-07-16"
-    },
-    {
-      "id": "23434",
-      "BookName": "fsdfsdf",
-      "Author": "sdfdsfsdff",
-      "Date": "2022-07-14"
-    },
-    {
-      "id": "2122",
-      "BookName": "life of pie",
-      "Author": "sachin",
-      "Date": "2022-07-20"
-    }
+
   ]
 }

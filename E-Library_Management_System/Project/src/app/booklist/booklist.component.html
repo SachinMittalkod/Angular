@@ -12,7 +12,7 @@
 <mat-card class="example-card" *ngFor="let item of users | filter:term" class="col-md-2" fxLayoutGap="48px" >
     <mat-card-header class="width">
       <div mat-card-avatar></div>
-      <mat-card-title>{{item.Nameofbook}}</mat-card-title>
+      <mat-card-title >{{item.Nameofbook}}</mat-card-title>
       <mat-card-subtitle>Story</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="{{item.imageUrl}}" alt="book">

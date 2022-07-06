@@ -26,48 +26,7 @@
     }
   ],
   "reqbook": [
-    {
-      "id": "1211",
-      "BookName": "sacgin",
-      "Author": "assdf",
-      "Date": "2022-07-23"
-    },
-    {
-      "id": "123",
-      "BookName": "sachin",
-      "Author": "wings",
-      "Date": "2022-07-28"
-    },
-    {
-      "id": "dgf",
-      "BookName": "dfgfg",
-      "Author": "dfgfg",
-      "Date": "2022-07-27"
-    },
-    {
-      "id": "hgfhgh",
-      "BookName": "fghgfh",
-      "Author": "fghgfh",
-      "Date": "2022-07-29"
-    },
-    {
-      "id": "nanu",
-      "BookName": "fghgfh",
-      "Author": "fghgfh",
-      "Date": "2022-07-29"
-    },
-    {
-      "id": "asdasddsad",
-      "BookName": "asdsda",
-      "Author": "asdasdsadsa",
-      "Date": "2022-07-28"
-    },
-    {
-      "id": "12",
-      "BookName": "wings of fire",
-      "Author": "satya",
-      "Date": "2022-07-23"
-    }
+ 
   ],
   "signupuser": [
     {
@@ -76,7 +35,26 @@
       "email": "shivam@gmail.com",
       "mobileno": "123456489",
       "createpassword": "sachin1234"
+    },
+    {
+      "id": 4,
+      "username": "sachin",
+      "email": "sachinmittalkod@gmail.com",
+      "mobileno": "7204905646",
+      "createpassword": "sachin1234"
+    },
+    {
+      "id": 5,
+      "username": "sachin",
+      "email": "sachinmittalkod@gmail.com",
+      "mobileno": "1234",
+      "createpassword": "sachin1234"
     }
   ],
-  ""
+  "admin": [
+    {
+      "adminname": "admin",
+      "adminpassword": "admin1234"
+    }
+  ]
 }

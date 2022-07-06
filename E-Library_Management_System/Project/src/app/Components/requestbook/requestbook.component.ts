@@ -17,7 +17,7 @@ export class RequestbookComponent implements OnInit {
   ngOnInit(): void {
     this.forms=this.fb.group({
    
-      id:['',Validators.required],
+      // id:['',Validators.required],
       BookName:['',Validators.required],
       Author:['',Validators.required],
      Date:['',Validators.required]
@@ -26,7 +26,7 @@ export class RequestbookComponent implements OnInit {
   public onFormSubmit(forms:NgForm){
 this.service.addBook(forms).subscribe(data=>{
   this.arryofdata=data;
- 
+ alert("Book added")
 
 })
   }

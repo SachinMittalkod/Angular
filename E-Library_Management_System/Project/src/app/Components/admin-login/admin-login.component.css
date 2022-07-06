@@ -102,10 +102,11 @@ body {
 }
 
 .login{
-
+  background-image: url('../../../assets/images/AdminLogin.jpg');
   background-position: center;
   height: 100%;
-  /* background-repeat: no-repeat; */
+
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -113,3 +114,9 @@ h4{
   padding: 20px;
   height: 40px;
 }
+
+
+
+
+
+

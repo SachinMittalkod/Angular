@@ -8,14 +8,11 @@ import { AppComponent } from './app.component';
 
 import { RegisterPageComponent } from './Components/register-page/register-page.component';
 import { FormsModule } from '@angular/forms';
-
 import { MaterialModule } from './material/material.module';
 import { UserloginComponent } from './Components/userlogin/userlogin.component';
 import { AdminLoginComponent } from './Components/admin-login/admin-login.component';
-
 import { LoggedinPageComponent } from './Components/loggedin-page/loggedin-page.component';
 import { PagenotfoundComponent } from './Components/pagenotfound/pagenotfound.component';
-
 import { HomeComponent } from './Components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './Shared/Navbar/navbar.component';
@@ -34,11 +31,9 @@ import { AddbookComponent } from './Components/addbook/addbook.component';
  
     RegisterPageComponent,
     UserloginComponent,
-    AdminLoginComponent,
-   
+    AdminLoginComponent,  
     LoggedinPageComponent,
     PagenotfoundComponent,
-
     HomeComponent,
     NavbarComponent,
     BooklistComponent,
@@ -57,10 +52,13 @@ import { AddbookComponent } from './Components/addbook/addbook.component';
     MaterialModule,
     HttpClientModule,
     MatCardModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+ 
     
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
