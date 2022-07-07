@@ -94,6 +94,14 @@ public delete(id:number){
   const url=`${this.adminaddurl}/${id}`
  return  this.http.delete<Adminbook>(url);
 }
+
+public updatbook(updat:any){
+  const url = `${this.adminaddurl}/${updat.id}`;
+  return this.http.put<Bookdata>(url,updat)
+}
+getbook(){
+
+}
 }
 
 

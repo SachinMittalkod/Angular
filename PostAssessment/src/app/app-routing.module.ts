@@ -5,6 +5,7 @@ import { AvailabilitybooksComponent } from './Component/availabilitybooks/availa
 import { ListofBooksComponent } from './Component/listof-books/listof-books.component';
 import { ListofadminbooksComponent } from './Component/listofadminbooks/listofadminbooks.component';
 import { LoginComponent } from './Component/login/login.component';
+import { UpdatebookComponent } from './Component/updatebook/updatebook.component';
 import { UserLandingpageComponent } from './Component/user-landingpage/user-landingpage.component';
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:'adminlanding',component:AdminPanelComponent},
   {path:'listofbooks', component:ListofBooksComponent},
   {path:'adminaddedbooks', component:ListofadminbooksComponent},
-  {path:'useravaliofbook', component:AvailabilitybooksComponent}
+  {path:'useravaliofbook', component:AvailabilitybooksComponent},
+  {path:'updatedbook/:id', component:UpdatebookComponent}
 ];
 
 @NgModule({

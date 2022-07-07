@@ -19,6 +19,9 @@ import { ListofadminbooksComponent } from './Component/listofadminbooks/listofad
 import { AvailabilitybooksComponent } from './Component/availabilitybooks/availabilitybooks.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { UpdatebookComponent } from './Component/updatebook/updatebook.component';
+import { ToastrModule } from 'ngx-toastr';
+import { NgToastModule } from 'ng-angular-popup';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +44,8 @@ import { UpdatebookComponent } from './Component/updatebook/updatebook.component
     FormsModule,
     MaterialModule,
     ReactiveFormsModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    NgToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]

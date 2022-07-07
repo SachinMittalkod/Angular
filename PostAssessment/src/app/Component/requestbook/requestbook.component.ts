@@ -17,6 +17,7 @@ export class RequestbookComponent implements OnInit {
   bookdetails:any=[];
   data:any;
   id:number;
+  no:number;
   constructor(private fb:FormBuilder, private route:Router, private dialog:MatDialog, private service:BookService) { }
 
   ngOnInit(): void {
@@ -31,22 +32,28 @@ export class RequestbookComponent implements OnInit {
       this.data=res;
       // this.id=this.data.id;
       console.log(this.data);
+      // this.no=res;
+      // console.log(this.no);
+      
   })
   }
-  public reset(){
-    this.forms.reset();
-  }
+  
   // addBook
   onFormSubmit(datas:NgForm){
   
-    debugger;
+
 this.service.reqbook(datas).subscribe(respo=>{
   this.bookdetails=respo;
   if(this.bookdetails.id > 3){
+    window.location.reload();
 alert("you cant add")
 
   }
 })
 alert("new Book Requested")
+  }
+
+  public reset(){
+    this.forms.reset();
   }
 }

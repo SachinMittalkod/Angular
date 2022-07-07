@@ -1,7 +1,7 @@
 
 <div class="widthad">
     <mat-card >
-        <span *ngIf="data.length > 3">You Can't add Already 3 books added</span>
+        <span style="color: red;" *ngIf="data.length > 3">You Can't Request!! Already 3 books Requested</span>
         <form [formGroup]="forms" (ngSubmit)="onFormSubmit(forms.value)">
             <h2>Request for Book</h2>                  
            
@@ -36,12 +36,12 @@
 
 </span></button>
             </div>
-            <div class="reset">
-            <button (click)="reset()"><span class="material-icons-outlined">
+            <!-- <div class="reset">
+            <button  mat-button mat-dialog-reset ><span class="material-icons-outlined">
                 Reset
                 </span></button>
           
-            </div>
+            </div> -->
             <div mat-dialog-actions>
                 <button mat-button mat-dialog-close>Close</button>
               </div>

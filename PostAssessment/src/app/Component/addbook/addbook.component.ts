@@ -4,6 +4,8 @@ import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { MatButton } from '@angular/material/button';
 import {MatDialog} from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
+
 import { BookService } from 'src/app/service/book.service';
 @Component({
   selector: 'app-addbook',
@@ -15,7 +17,10 @@ export class AddbookComponent implements OnInit {
   bookdetails:any=[];
   data:any;
   id:number;
-  constructor(private fb:FormBuilder, private route:Router, private dialog:MatDialog, private service:BookService) { }
+  no: import("c:/Angular/PostAssessment/src/app/Model/Addbook.model").Adminbook;
+ 
+  constructor(private fb:FormBuilder, private route:Router, private dialog:MatDialog, private service:BookService
+  ) { }
 
   ngOnInit(): void {
     this.forms=this.fb.group({
@@ -27,16 +32,18 @@ export class AddbookComponent implements OnInit {
     })
 
   }
-  public reset(){
-    this.forms.reset();
-  }
+  // public reset(){
+  //   this.forms.reset();
+  // }
   // addBook
   onFormSubmit(datas:NgForm){
-  
-    debugger;
+  debugger;
+
 this.service.adminaddBook(datas).subscribe(respo=>{
   this.bookdetails=respo;
+this.no=respo;
   alert("Book Added Succesfully")
+  
     
 })
 

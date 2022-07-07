@@ -30,10 +30,10 @@ export class ListofadminbooksComponent implements OnInit {
       });
     }
 
- public   opendialog(){
-      this.dialog.open(UpdatebookComponent,{
-        width:'474px',
-        height: '440px'
-      })
-    }
+//  public   opendialog(){
+//       this.dialog.open(UpdatebookComponent,{
+//         width:'474px',
+//         height: '440px'
+//       })
+//     }
 }

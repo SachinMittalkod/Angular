@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {MatDialog} from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { Bookdata } from 'src/app/Model/reqbook.model';
 import { AddbookComponent } from '../addbook/addbook.component';
 
 @Component({
@@ -12,7 +13,7 @@ import { AddbookComponent } from '../addbook/addbook.component';
 export class AdminPanelComponent implements OnInit {
   forms: FormGroup;
 
-
+  notifications:Bookdata[]=[]
   constructor(private fb:FormBuilder, private route:Router, private dialog:MatDialog) { }
   ngOnInit(): void {
     this.forms=this.fb.group({
@@ -23,6 +24,7 @@ export class AdminPanelComponent implements OnInit {
      Date:['',Validators.required]
     })
   }
+
 
   openDialog() {
     this.dialog.open(AddbookComponent, {

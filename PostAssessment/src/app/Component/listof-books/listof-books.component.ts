@@ -9,6 +9,7 @@ import { BookService } from 'src/app/service/book.service';
 })
 export class ListofBooksComponent implements OnInit {
   mydata:Bookdata[]=[];
+  notifications: any;
   constructor(private service:BookService) { }
   recdata:Bookdata[]=[];
 
@@ -16,6 +17,7 @@ export class ListofBooksComponent implements OnInit {
   this.service.receiveBook().subscribe(resp=>{
     this.mydata=resp;
     console.log(this.mydata);
+    this.notifications=resp.lenght;
   })
     }
   }

@@ -21,10 +21,22 @@
       "id": 1
     },
     {
-      "BookName": "userrr",
-      "Author": "req",
-      "Date": "2022-07-14",
+      "BookName": "sdfdf",
+      "Author": "sdfdf",
+      "Date": "2022-07-13",
       "id": 2
+    },
+    {
+      "BookName": "sdfdfd",
+      "Author": "sdfdfd",
+      "Date": "2022-07-13",
+      "id": 3
+    },
+    {
+      "BookName": "sdfdfdd",
+      "Author": "sdfdfdd",
+      "Date": "2022-07-13",
+      "id": 4
     }
   ],
   "AdminAddbook": [
@@ -33,6 +45,12 @@
       "Author": "asdsada",
       "Date": "2022-07-15",
       "id": 5
+    },
+    {
+      "BookName": "asdsadsa",
+      "Author": "asdasd",
+      "Date": "2022-07-08",
+      "id": 6
     }
   ]
 }
