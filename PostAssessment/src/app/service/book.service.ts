@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { catchError, Observable } from 'rxjs';
+import { Adminbook } from '../Model/Addbook.model';
 import {Bookdata} from '../Model/reqbook.model';
 
 @Injectable({
@@ -17,6 +18,7 @@ response:any;
 data:any;
 
 reqbookurl='http://localhost:3000/bookreq';
+adminaddurl='http://localhost:3000/AdminAddbook';
 
   constructor(private http:HttpClient, private router:Router) { }
 
@@ -73,7 +75,7 @@ checkRole()
   }
 }
 
-public addBook(emp:any):Observable<Bookdata>{
+public reqbook(emp:any):Observable<Bookdata>{
   return this.http.post<Bookdata>(this.reqbookurl,emp);
 }
 
@@ -81,6 +83,17 @@ public receiveBook():Observable<any>{
  return this.http.get<any>(this.reqbookurl);
 }
 
+public adminaddBook(emp:any):Observable<Adminbook>{
+  return this.http.post<Adminbook>(this.adminaddurl,emp);
+}
+public getadminbook(){
+  return this.http.get<any>(this.adminaddurl);
+}
+
+public delete(id:number){
+  const url=`${this.adminaddurl}/${id}`
+ return  this.http.delete<Adminbook>(url);
+}
 }
 
 

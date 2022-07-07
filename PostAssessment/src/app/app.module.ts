@@ -14,7 +14,11 @@ import { MaterialModule } from './Material/material/material.module';
 import { UserLandingpageComponent } from './Component/user-landingpage/user-landingpage.component';
 import { AddbookComponent } from './Component/addbook/addbook.component';
 import { ListofBooksComponent } from './Component/listof-books/listof-books.component';
-
+import { RequestbookComponent } from './Component/requestbook/requestbook.component';
+import { ListofadminbooksComponent } from './Component/listofadminbooks/listofadminbooks.component';
+import { AvailabilitybooksComponent } from './Component/availabilitybooks/availabilitybooks.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { UpdatebookComponent } from './Component/updatebook/updatebook.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +27,11 @@ import { ListofBooksComponent } from './Component/listof-books/listof-books.comp
     AdminPanelComponent,
     UserLandingpageComponent,
     AddbookComponent,
-    ListofBooksComponent
+    ListofBooksComponent,
+    RequestbookComponent,
+    ListofadminbooksComponent,
+    AvailabilitybooksComponent,
+    UpdatebookComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +41,7 @@ import { ListofBooksComponent } from './Component/listof-books/listof-books.comp
     FormsModule,
     MaterialModule,
     ReactiveFormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

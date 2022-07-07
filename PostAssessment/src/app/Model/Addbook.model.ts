@@ -1,6 +1,6 @@
-export class Bookdata{
-    id:number;
+export class Adminbook{
     BookName:string;
     Author:string;
+    image:string;
     Date:Date;
 }

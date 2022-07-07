@@ -1,0 +1,38 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin1234",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "sachin",
+      "password": "sachin1234",
+      "role": "user"
+    }
+  ],
+  "bookreq": [
+    {
+      "BookName": "userrequest",
+      "Author": "userlanding",
+      "Date": "2022-07-09",
+      "id": 1
+    },
+    {
+      "BookName": "userrr",
+      "Author": "req",
+      "Date": "2022-07-14",
+      "id": 2
+    }
+  ],
+  "AdminAddbook": [
+    {
+      "BookName": "asdsdas",
+      "Author": "asdsada",
+      "Date": "2022-07-15",
+      "id": 5
+    }
+  ]
+}

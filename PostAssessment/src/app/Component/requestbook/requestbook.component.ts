@@ -5,12 +5,14 @@ import { MatButton } from '@angular/material/button';
 import {MatDialog} from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { BookService } from 'src/app/service/book.service';
+
 @Component({
-  selector: 'app-addbook',
-  templateUrl: './addbook.component.html',
-  styleUrls: ['./addbook.component.css']
+  selector: 'app-requestbook',
+  templateUrl: './requestbook.component.html',
+  styleUrls: ['./requestbook.component.css']
 })
-export class AddbookComponent implements OnInit {
+export class RequestbookComponent implements OnInit {
+
   forms: FormGroup;
   bookdetails:any=[];
   data:any;
@@ -25,7 +27,11 @@ export class AddbookComponent implements OnInit {
       Author:['',Validators.required],
      Date:['',Validators.required]
     })
-
+    this.service.receiveBook().subscribe(res=>{
+      this.data=res;
+      // this.id=this.data.id;
+      console.log(this.data);
+  })
   }
   public reset(){
     this.forms.reset();
@@ -34,11 +40,13 @@ export class AddbookComponent implements OnInit {
   onFormSubmit(datas:NgForm){
   
     debugger;
-this.service.adminaddBook(datas).subscribe(respo=>{
+this.service.reqbook(datas).subscribe(respo=>{
   this.bookdetails=respo;
-  alert("Book Added Succesfully")
-    
-})
+  if(this.bookdetails.id > 3){
+alert("you cant add")
 
+  }
+})
+alert("new Book Requested")
   }
 }

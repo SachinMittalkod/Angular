@@ -33,11 +33,11 @@
         </button>
         <button mat-menu-item  [routerLink]="['/listofbooks']" routerLinkActive="router-link-active">
           <mat-icon><span class="material-symbols-sharp"  >library_books</span></mat-icon>
-          <span>List of Books</span>
+          <span>User Requests</span>
         </button>
-        <button mat-menu-item>
+        <button mat-menu-item [routerLink]="['/adminaddedbooks']" routerLinkActive="router-link-active" >
           <mat-icon>notifications_off</mat-icon>
-          <span>Disable alerts</span>
+          <span>Admin Added Books</span>
         </button>
       </mat-menu>
     
