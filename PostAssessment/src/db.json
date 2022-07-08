@@ -29,12 +29,6 @@
   ],
   "AdminAddbook": [
     {
-      "BookName": "Abdul Kalam",
-      "Author": "wings of fire and fire",
-      "Date": "2022-07-14",
-      "id": 4
-    },
-    {
       "BookName": "sdfds",
       "Author": "rushi",
       "Date": "2022-07-20",
@@ -59,12 +53,6 @@
       "id": 9
     },
     {
-      "BookName": "adssads",
-      "Author": "asdsds",
-      "Date": "2022-07-08",
-      "id": 10
-    },
-    {
       "BookName": "sachin ",
       "Author": "wings of fire ",
       "Date": "2022-07-08",
@@ -77,10 +65,10 @@
       "id": 12
     },
     {
-      "BookName": "dfgffd",
-      "Author": "dfgdfgf",
+      "BookName": "rushi",
+      "Author": "pune",
       "Date": "2022-07-08",
-      "id": 13
+      "id": 14
     }
   ]
 }
