@@ -2,16 +2,16 @@
 <div class="widthad">
     <mat-card >
         <span ></span>
-        <form [formGroup]="forms" (ngSubmit)="update()">
+        <form [formGroup]="forms" (ngSubmit)="update(forms.value)">
             <h2>Edit Book</h2>                  
-            <mat-form-field>
+            <!-- <mat-form-field>
                 <input matInput placeholder="Enter Book Id" formControlName="id" [(ngModel)]="store.id">
                 <mat-error>
                     <span *ngIf="!forms.get('id')?.valid && forms.get('id')?.touched">Book id Required</span>
                 </mat-error>
-            </mat-form-field>
+            </mat-form-field> -->
             <mat-form-field>
-                <input matInput placeholder="Enter Book Name" formControlName="BookName">
+                <input matInput placeholder="Enter Book Name" formControlName="BookName" value="{{bookdata.BookName}}">
             
                 <mat-error>
                     <span *ngIf="!forms.get('BookName')?.valid && forms.get('BookName')?.touched">Author name Required</span>
@@ -19,7 +19,7 @@
             </mat-form-field>
 
             <mat-form-field>
-                <input matInput placeholder="Enter Author Name" formControlName="Author">            
+                <input matInput placeholder="Enter Author Name" formControlName="Author" value="{{bookdata.Author}}">            
                 <mat-error>
                     <span *ngIf="!forms.get('Author')?.valid && forms.get('Author')?.touched">Author name Required</span>
                 </mat-error>

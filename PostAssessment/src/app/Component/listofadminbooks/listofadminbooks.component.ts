@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Adminbook } from 'src/app/Model/Addbook.model';
 import { Bookdata } from 'src/app/Model/reqbook.model';
 import { BookService } from 'src/app/service/book.service';
 import { UpdatebookComponent } from '../updatebook/updatebook.component';
@@ -11,9 +13,9 @@ import { UpdatebookComponent } from '../updatebook/updatebook.component';
 })
 export class ListofadminbooksComponent implements OnInit {
   mydata:Bookdata[]=[];
-  constructor(private service:BookService, private dialog:MatDialog) { }
+  constructor(private service:BookService, private dialog:MatDialog, private http:HttpClient) { }
   recdata:Bookdata[]=[];
-
+  userss:any;
   ngOnInit(): void {
   this.service.getadminbook().subscribe(resp=>{
     this.mydata=resp;
@@ -28,12 +30,16 @@ export class ListofadminbooksComponent implements OnInit {
         window.location.reload();
 
       });
-    }
 
-//  public   opendialog(){
-//       this.dialog.open(UpdatebookComponent,{
-//         width:'474px',
-//         height: '440px'
-//       })
-//     }
+      
+    }
+   
+
+    
+ public  opendialog(){
+      this.dialog.open(UpdatebookComponent,{
+        width:'474px',
+        height: '440px'
+      })
+    }
 }

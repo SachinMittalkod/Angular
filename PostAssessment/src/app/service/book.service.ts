@@ -95,12 +95,13 @@ public delete(id:number){
  return  this.http.delete<Adminbook>(url);
 }
 
-public updatbook(updat:any){
-  const url = `${this.adminaddurl}/${updat.id}`;
+public updatbook(id:any,updat:any){
+  const url = `${this.adminaddurl}/${id}`;
   return this.http.put<Bookdata>(url,updat)
 }
-getbook(){
-
+public getBookById(id:any){
+  const url=`${this.adminaddurl}/${id}`
+  return  this.http.delete<Adminbook>(url);
 }
 }
 

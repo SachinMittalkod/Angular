@@ -11,7 +11,7 @@
                     </mat-card-content>
                     <mat-card-actions>
                       <!-- (click)="opendialog()" -->
-                      <button mat-button  routerLink="/updatedbook" ><span class="material-symbols-outlined"  >edit</span></button>
+                      <button mat-button  routerLink="/updatedbook" ><span class="material-symbols-outlined" (click)="opendialog()" >edit</span></button>
                       <button mat-button (click)="deleteit(item.id)"><span class="material-symbols-outlined" >delete</span></button>
                     </mat-card-actions>
                     <mat-card-footer>
