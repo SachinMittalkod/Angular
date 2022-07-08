@@ -17,6 +17,7 @@ export class ListofadminbooksComponent implements OnInit {
   recdata:Bookdata[]=[];
   userss:any;
   ngOnInit(): void {
+    
   this.service.getadminbook().subscribe(resp=>{
     this.mydata=resp;
     console.log(this.mydata);

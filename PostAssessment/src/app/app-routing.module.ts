@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'listofbooks', component:ListofBooksComponent},
   {path:'adminaddedbooks', component:ListofadminbooksComponent},
   {path:'useravaliofbook', component:AvailabilitybooksComponent},
-  {path:'updatedbook/:id', component:UpdatebookComponent}
+  {path:'update/:id', component:UpdatebookComponent}
 ];
 
 @NgModule({

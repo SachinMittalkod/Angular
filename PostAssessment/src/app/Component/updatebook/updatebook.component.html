@@ -2,15 +2,10 @@
 <div class="widthad">
     <mat-card >
         <span ></span>
-        <form [formGroup]="forms" (ngSubmit)="update(forms.value)">
+        <form [formGroup]="empForm" (ngSubmit)="update()">
             <h2>Edit Book</h2>                  
+          
             <!-- <mat-form-field>
-                <input matInput placeholder="Enter Book Id" formControlName="id" [(ngModel)]="store.id">
-                <mat-error>
-                    <span *ngIf="!forms.get('id')?.valid && forms.get('id')?.touched">Book id Required</span>
-                </mat-error>
-            </mat-form-field> -->
-            <mat-form-field>
                 <input matInput placeholder="Enter Book Name" formControlName="BookName" value="{{bookdata.BookName}}">
             
                 <mat-error>
@@ -31,10 +26,7 @@
                 </mat-error>
               </mat-form-field>
             <div class="button-row">
-                <button mat-flat-button  color="primary" type="submit" [disabled]="!forms.valid"><span class="material-symbols-sharp"
-                    >send
-
-</span></button>
+                <button mat-flat-button  color="primary" type="submit" [disabled]="!forms.valid"><span class="material-symbols-sharp">send</span></button>
             </div>
             <div class="reset">
             <button (click)="reset()"><span class="material-icons-outlined">
@@ -44,7 +36,43 @@
             </div>
             <div mat-dialog-actions>
                 <button mat-button mat-dialog-close>Close</button>
-              </div>
-        </form>
+              </div> -->
+              <mat-form-field>
+                <input matInput placeholder="Enter Book Id" formControlName="id" [(ngModel)]="user.id">
+                <mat-error>
+                    <span *ngIf="!empForm.get('id')?.valid && empForm.get('id')?.touched">Book id Required</span>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Enter Book Name" formControlName="BookName" [(ngModel)]="user.BookName">
+               
+                <mat-error>
+                    <span *ngIf="!empForm.get('BookName')?.valid && empForm.get('BookName')?.touched">Name Required</span>
+                </mat-error>
+            </mat-form-field>
+
+          
+            <mat-form-field>
+                <input matInput placeholder="Enter Author Name" formControlName="Author" [(ngModel)]="user.Author">
+            
+                <mat-error>
+                    <span *ngIf="!empForm.get('Author')?.valid && empForm.get('Author')?.touched">Department Required</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="date"  formControlName="Date" [(ngModel)]="user.Date">
+                <mat-error>
+                    <span *ngIf="!empForm.get('Date')?.valid && empForm.get('Date')?.touched">Department Required</span>
+                </mat-error>
+              </mat-form-field>
+          
+
+            
+            <div class="button-row">
+                <button mat-flat-button color="primary" type="submit" [disabled]="!empForm.valid"><mat-icon>save</mat-icon></button>
+            </div>
+        
+            </form>
     </mat-card>
 </div>

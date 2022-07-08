@@ -18,6 +18,7 @@ export class ListofBooksComponent implements OnInit {
     this.mydata=resp;
     console.log(this.mydata);
     this.notifications=resp.lenght;
+    console.log(this.notifications);
   })
     }
   }

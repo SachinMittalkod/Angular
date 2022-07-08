@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {MatDialog} from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Bookdata } from 'src/app/Model/reqbook.model';
+import { BookService } from 'src/app/service/book.service';
 import { AddbookComponent } from '../addbook/addbook.component';
 
 @Component({
@@ -12,9 +13,9 @@ import { AddbookComponent } from '../addbook/addbook.component';
 })
 export class AdminPanelComponent implements OnInit {
   forms: FormGroup;
-
+  mydata:Bookdata[]=[];
   notifications:Bookdata[]=[]
-  constructor(private fb:FormBuilder, private route:Router, private dialog:MatDialog) { }
+  constructor(private fb:FormBuilder, private route:Router, private dialog:MatDialog,private service:BookService) { }
   ngOnInit(): void {
     this.forms=this.fb.group({
    
@@ -22,6 +23,13 @@ export class AdminPanelComponent implements OnInit {
       BookName:['',Validators.required],
       Author:['',Validators.required],
      Date:['',Validators.required]
+    })
+
+    this.service.receiveBook().subscribe(resp=>{
+      this.mydata=resp;
+      console.log(this.mydata);
+      this.notifications=resp.lenght;
+      console.log(this.notifications);
     })
   }
 

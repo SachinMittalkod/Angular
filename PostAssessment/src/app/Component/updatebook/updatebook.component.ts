@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Adminbook } from 'src/app/Model/Addbook.model';
 import { Bookdata } from 'src/app/Model/reqbook.model';
 import { BookService } from 'src/app/service/book.service';
+import { EditService } from 'src/app/service/edit.service';
 
 @Component({
   selector: 'app-updatebook',
@@ -10,62 +12,50 @@ import { BookService } from 'src/app/service/book.service';
   styleUrls: ['./updatebook.component.css']
 })
 export class UpdatebookComponent implements OnInit {
-  forms:FormGroup;
-  bookdata = new Bookdata();
+  empForm:FormGroup;
   val: any;
   
-  constructor(private service:BookService, private router:Router, private fb:FormBuilder, private para: ActivatedRoute) { }
-
+  // constructor(private service:BookService, private router:Router, private fb:FormBuilder, private para: ActivatedRoute) { }
+  constructor(private bs: EditService,private router: Router, private formBuilder: FormBuilder,public route: ActivatedRoute) { }
+  users: Adminbook[] =[];
+  user: Adminbook;
   ngOnInit(): void {
-    // let sub = this.route.params.subscribe(params => {
-    //   this.val = params['id'];
-    //   //this.getEmployeeById(this.router.snapshot.params['id']);
-       
-    // });
-    this.update(this.para.snapshot.params['id']);
-    this.forms=this.fb.group({
-      id:[""],
-      BookName:[""],
-      Author:[""],
-      Date:[""]
+    let sub = this.route.params.subscribe(params => {
+      this.val = params['id'];
+      //this.getEmployeeById(this.router.snapshot.params['id']);
     });
-    this.getBook(this.para.snapshot.params['id']);
-    // this.service.updatbook(this.val).subscribe(data => {
-    //   this.store =data;
-    //   console.log(this.store.BookName);
-    // });
-    
-  }
-  public getBook(id:any){
-
-    this.service.getBookById(id).subscribe(res=>{
-
-      this.bookdata =res;
-      console.log(res,'Hello I am  ');
-
-    },err=>{
-
-      console.log(err);
-
+     console.log(this.val);
+    this.bs.getUpdateUser(this.val).subscribe(data => {
+      this.user =data;
+      console.log(this.user.BookName);
     })
 
+    this.empForm=this.formBuilder.group({
+  
+     id:['',Validators.required],
+     BookName:['',Validators.required],
+     Author:['',Validators.required],
+    Date:['',Validators.required]
+   })
+    
+
   }
+ 
   public reset(){
-    this.forms.reset();
+    this.empForm.reset();
   }
   
-  update(id:any){
-    console.log(this.forms.value)
-    this.service.updatbook(id,this.forms).subscribe(data=>{
-      console.log(data,'Hello I am here');
+  update(){
+    this.bs.updateUser(this.user).subscribe(data => {
+    });
+    this.getUsers();
+    this.router.navigate(['/adminaddedbooks']);
+  }
+
+  getUsers() {
+    this.bs.getUsers().subscribe((response) => {
+      this.users = response;
     })
-    this.getuser();
-    this.router.navigate(['/adminaddedbooks'])
   }
-  getuser() {
-   this.service.getadminbook().subscribe((resp=>{
-    this.bookdata=resp;
-    console.log(resp);
-   }))
-  }
+  
 }
