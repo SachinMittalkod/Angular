@@ -21,6 +21,7 @@ export class ListofBooksComponent implements OnInit {
     console.log(this.notifications);
   })
     }
+    
     accept(id:number){
    
       this.service.acceptrequest(id).subscribe(resp=>{

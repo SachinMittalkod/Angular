@@ -5,6 +5,7 @@ import { MatButton } from '@angular/material/button';
 import {MatDialog} from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { BookService } from 'src/app/service/book.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-requestbook',
@@ -18,7 +19,7 @@ export class RequestbookComponent implements OnInit {
   data:any;
   id:number;
   no:number;
-  constructor(private fb:FormBuilder, private route:Router, private dialog:MatDialog, private service:BookService) { }
+  constructor(private fb:FormBuilder, private route:Router, private dialog:MatDialog, private service:BookService,private toster:NgToastService) { }
 
   ngOnInit(): void {
     this.forms=this.fb.group({
@@ -45,12 +46,13 @@ export class RequestbookComponent implements OnInit {
 this.service.reqbook(datas).subscribe(respo=>{
   this.bookdetails=respo;
   if(this.bookdetails.id > 3){
-    window.location.reload();
-alert("you cant add")
+    // window.location.reload();
+
 
   }
 })
-alert("new Book Requested")
+this.toster.success({detail:"Books Requested successfully", summary:"something went wrong",duration:5000})
+// alert("new Book Requested")
   }
 
   public reset(){
