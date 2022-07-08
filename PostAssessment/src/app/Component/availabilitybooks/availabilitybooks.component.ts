@@ -11,7 +11,7 @@ export class AvailabilitybooksComponent implements OnInit {
   term:string="";
   mydata:Bookdata[]=[];
   today = new Date();
-  tomorrow = new Date(this.today.getTime() + (24 * 60 * 60 * 1000));
+  tomorrow = new Date(this.today.getTime() + (48 * 60 * 60 * 1000));
 
   constructor(private service:BookService) { }
   recdata:Bookdata[]=[];

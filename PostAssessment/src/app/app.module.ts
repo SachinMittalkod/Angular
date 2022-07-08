@@ -10,7 +10,8 @@ import { LoginComponent } from './Component/login/login.component';
 import { AdminPanelComponent } from './Component/admin-panel/admin-panel.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MaterialModule } from './Material/material/material.module';
+// import { MaterialModule } from './Material/material/material.module';
+import {MaterialModule} from '../app/Shared/Material/material/material.module'
 import { UserLandingpageComponent } from './Component/user-landingpage/user-landingpage.component';
 import { AddbookComponent } from './Component/addbook/addbook.component';
 import { ListofBooksComponent } from './Component/listof-books/listof-books.component';

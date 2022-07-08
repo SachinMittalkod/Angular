@@ -1,7 +1,8 @@
 
 <div class="widthad">
+    <span style="color: red;" *ngIf="data.length >= 3">You Can't Request!! Already 3 books Requested</span>
     <mat-card >
-        <span style="color: red;" *ngIf="data.length > 3">You Can't Request!! Already 3 books Requested</span>
+       
         <form [formGroup]="forms" (ngSubmit)="onFormSubmit(forms.value)">
             <h2>Request for Book</h2>                  
            

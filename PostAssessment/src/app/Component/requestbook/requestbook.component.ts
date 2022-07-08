@@ -46,9 +46,11 @@ export class RequestbookComponent implements OnInit {
 this.service.reqbook(datas).subscribe(respo=>{
   this.bookdetails=respo;
   if(this.bookdetails.id > 3){
-    // window.location.reload();
+    window.location.reload();
 
-
+   
+  }else{
+    this.toster.error({detail:"cant request more than 3", summary:"something went wrong",duration:5000})
   }
 })
 this.toster.success({detail:"Books Requested successfully", summary:"something went wrong",duration:5000})
