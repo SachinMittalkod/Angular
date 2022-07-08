@@ -103,6 +103,11 @@ public getBookById(id:any){
   const url=`${this.adminaddurl}/${id}`
   return  this.http.delete<Adminbook>(url);
 }
+
+acceptrequest(id:number){
+  const url=`${this.reqbookurl}/${id}`
+ return  this.http.delete<Adminbook>(url);
+}
 }
 
 

@@ -15,28 +15,10 @@
   ],
   "bookreq": [
     {
-      "BookName": "userrequest",
-      "Author": "userlanding",
-      "Date": "2022-07-09",
-      "id": 1
-    },
-    {
-      "BookName": "sdfdf",
-      "Author": "sdfdf",
-      "Date": "2022-07-13",
-      "id": 2
-    },
-    {
       "BookName": "sdfdfd",
       "Author": "sdfdfd",
       "Date": "2022-07-13",
       "id": 3
-    },
-    {
-      "BookName": "sdfdfdd",
-      "Author": "sdfdfdd",
-      "Date": "2022-07-13",
-      "id": 4
     }
   ],
   "AdminAddbook": [
@@ -45,6 +27,30 @@
       "Author": "wings of fire and fire",
       "Date": "2022-07-14",
       "id": 4
+    },
+    {
+      "BookName": "sdfds",
+      "Author": "rushi",
+      "Date": "2022-07-20",
+      "id": 5
+    },
+    {
+      "BookName": "asdsada",
+      "Author": "asdasda",
+      "Date": "2022-07-21",
+      "id": 7
+    },
+    {
+      "BookName": "qwee",
+      "Author": "qwewqwq",
+      "Date": "2022-07-13",
+      "id": 8
+    },
+    {
+      "BookName": "sdfsf",
+      "Author": "sdfdsfdsd",
+      "Date": "2022-07-20",
+      "id": 9
     }
   ]
 }
