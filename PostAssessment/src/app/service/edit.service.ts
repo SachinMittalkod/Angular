@@ -9,17 +9,15 @@ import { Adminbook } from '../Model/Addbook.model';
 })
 export class EditService {
   
- headers = new HttpHeaders().set('Content-Type', 'aplication/json').set('Accect','accept/json');
- httpOption = {
-   headers: this.headers
- }
+
   adminaddurl='http://localhost:3000/AdminAddbook';
   constructor(private http:HttpClient, private router:Router) { }
 
 
   getUpdateUser(id:number){
     const url = `${this.adminaddurl}/${id}`;
-    return this.http.get<Adminbook>(url,this.httpOption);
+    return this.http.get<Adminbook>(url,);
+  
   }
   public updateUser(user: any): Observable<Adminbook> {
     const url = `${this.adminaddurl}/${user.id}`;
