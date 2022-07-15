@@ -19,7 +19,7 @@ column=["id","image","BookName" ,"author" ,"imageUrl"]
 users:requestbook[]=[];
 today= new Date();
 
-tomorrow = new Date(this.today.getTime() + (48 * 60 * 60 * 1000));
+tomorrow = new Date(this.today.getTime() + (168 * 60 * 60 * 1000));
 
   ngOnInit(): void {
     // this.service.getusers().subscribe((response)=>{

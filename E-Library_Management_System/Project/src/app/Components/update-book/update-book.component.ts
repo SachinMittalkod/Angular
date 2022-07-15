@@ -15,6 +15,8 @@ import { NotificationService } from 'src/app/service/notification.service';
 export class UpdateBookComponent implements OnInit {
   forms:FormGroup;
   editId:any;
+  datas:any;
+ hello:string="Ho dudees"
  updatebooks:any;
   constructor(private fb:FormBuilder, private service:BooksService, private route:Router,
     private notifiservice:NotificationService, private services:AdminaddbookService,
@@ -22,6 +24,11 @@ export class UpdateBookComponent implements OnInit {
     this.services.subject.subscribe(response=>{
       this.editId=response;
     })
+  //  this.services.getbookid().subscribe(res=>{
+  //   this.datas=res;
+  //   console.log(this.datas);
+    
+  //  })
 
   }
 
@@ -33,11 +40,17 @@ export class UpdateBookComponent implements OnInit {
       Author:['',Validators.required],
      Date:['',Validators.required]
     });
+
+    this.services.getbookid().subscribe(res=>{
+      this.datas=res;
+      console.log(this.datas);
+      
+     })
   
 
 
   }
-
+  // ids:Adminaddbook;
   onEdit(){{
     console.log(this.editId)
     this.services.editSer(this.editId,this.forms.value).subscribe(response=>{

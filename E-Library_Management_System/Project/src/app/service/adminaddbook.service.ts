@@ -13,6 +13,7 @@ export class AdminaddbookService {
   subject=new Subject();
   constructor(private http:HttpClient, private router:Router) { }
 
+  
   public adminaddBook(emp:any):Observable<Adminaddbook>{
     return this.http.post<Adminaddbook>(this.adminaddurl,emp);
   }
@@ -28,10 +29,16 @@ export class AdminaddbookService {
     const url=`${this.adminaddurl}/${id}`
    return  this.http.patch<Adminaddbook>(url,forms);
   }
+
+ 
    public editId(data:any){
-    console.log(data);
+    // console.log(data);
     return  this.subject.next(data);
 
+  }
+  public getbookid(){
+    const urls=`${this.adminaddurl}`
+    return this.http.get<Adminaddbook>(urls)
   }
 
 }

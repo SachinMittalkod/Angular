@@ -37,14 +37,11 @@ export class UpdatebookComponent implements OnInit {
      Author:['',Validators.required],
     Date:['',Validators.required]
    })
-    
-
   }
- 
   public reset(){
     this.empForm.reset();
   }
-  
+
   update(){
     this.bs.updateUser(this.user).subscribe(data => {
     });
@@ -56,3 +53,5 @@ export class UpdatebookComponent implements OnInit {
     this.bs.getUsers().subscribe((response) => {
       this.users = response;
     })
+  } 
+}

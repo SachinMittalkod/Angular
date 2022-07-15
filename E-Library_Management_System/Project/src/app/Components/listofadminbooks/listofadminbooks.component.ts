@@ -18,6 +18,7 @@ export class ListofadminbooksComponent implements OnInit {
   term: string = '';
   column = ['image', 'BookName', 'author', 'imageUrl'];
   users: requestbook[] = [];
+  ids: Adminaddbook;
   constructor(
     private service: BooksService,
     private adminservice: AdminaddbookService, private dialog:MatDialog,
@@ -49,8 +50,9 @@ export class ListofadminbooksComponent implements OnInit {
   opendialog(id: any){
     this.dialog.open(UpdateBookComponent, {
       width:'450px',
-    
+
     });
+    this.adminservice.getbookid()
     this.adminservice.editId(id);
     
   }
