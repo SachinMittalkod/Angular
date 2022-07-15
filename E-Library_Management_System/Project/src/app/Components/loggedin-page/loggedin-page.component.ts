@@ -12,7 +12,7 @@ export class LoggedinPageComponent implements OnInit {
   constructor(private dialog:MatDialog) { }
 
   ngOnInit(): void {
-    console.log("lazy loading");
+ 
   }
   openDialog() {
     this.dialog.open(RequestbookComponent, {

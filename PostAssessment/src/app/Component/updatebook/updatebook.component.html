@@ -60,19 +60,17 @@
                     <span *ngIf="!empForm.get('Author')?.valid && empForm.get('Author')?.touched">Department Required</span>
                 </mat-error>
             </mat-form-field>
+
             <mat-form-field>
                 <input matInput type="date"  formControlName="Date" [(ngModel)]="user.Date">
                 <mat-error>
                     <span *ngIf="!empForm.get('Date')?.valid && empForm.get('Date')?.touched">Department Required</span>
                 </mat-error>
               </mat-form-field>
-          
-
-            
+             
             <div class="button-row">
                 <button mat-flat-button color="primary" type="submit" [disabled]="!empForm.valid"><mat-icon>save</mat-icon></button>
             </div>
-        
             </form>
     </mat-card>
 </div>

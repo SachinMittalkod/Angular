@@ -56,6 +56,3 @@ export class UpdatebookComponent implements OnInit {
     this.bs.getUsers().subscribe((response) => {
       this.users = response;
     })
-  }
-  
-}

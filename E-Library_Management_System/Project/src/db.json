@@ -26,7 +26,36 @@
     }
   ],
   "reqbook": [
- 
+    {
+      "username": "sdfd",
+      "BookName": "sdff",
+      "Author": "sdff",
+      "Date": "2022-07-30",
+      "id": 4
+    },
+    {
+      "username": "sachin",
+      "BookName": "Wings of Fire",
+      "Author": "APJ",
+      "Date": "2022-07-29",
+      "id": 5
+    },
+    {
+      "username": "asdsad",
+      "BookName": "asdsd",
+      "Author": "asdssad",
+      "Date": "2022-07-15",
+      "id": 6
+    }
+  ],
+  "AdminAddbooks": [
+    {
+      "image": "sadsad",
+      "BookName": "sads",
+      "Author": "asdsdsd",
+      "Date": "2022-07-21",
+      "id": 4
+    }
   ],
   "signupuser": [
     {
@@ -49,12 +78,19 @@
       "email": "sachinmittalkod@gmail.com",
       "mobileno": "1234",
       "createpassword": "sachin1234"
+    },
+    {
+      "id": 6,
+      "username": "Manju",
+      "email": "manju@gmail.com",
+      "mobileno": "123455",
+      "createpassword": "manju1234"
     }
   ],
-  "admin": [
+  "admindata": [
     {
-      "adminname": "admin",
-      "adminpassword": "admin1234"
+      "adminid": "admin",
+      "adminPassword": "admin1234"
     }
   ]
 }

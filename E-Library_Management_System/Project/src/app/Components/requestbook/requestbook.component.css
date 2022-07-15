@@ -55,7 +55,7 @@ mat-sidenav {
   .example-container {
 	display: flex;
 	flex-direction: column;
-	max-height: 500px;
+	max-height: 50px;
 	min-width: 100%;
   }
   
@@ -68,14 +68,18 @@ mat-sidenav {
 	cursor: pointer;
   }
 
-  mat-card {max-width: 400px;margin: 7em auto;text-align: center;}mat-form-field {display: block;}
+  mat-card {max-width: 400px;margin: 5em auto;text-align: center;}mat-form-field {display: block;}
   
  .active{
 	 color: lightcoral;
  }
  .widthad{
-    width: 400px;
-    height:300px;
+	margin: auto;
+	width: 60%;
+	
+	padding: 10px;
+    width: 450px;
+    height:200px;
  }
  
 

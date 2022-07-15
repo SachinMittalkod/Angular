@@ -1,6 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BooklistComponent } from './booklist/booklist.component';
+import { BooklistComponent } from './Components/booklist/booklist.component';
 import { AddbookComponent } from './Components/addbook/addbook.component';
 import { AdminLandingPageComponent } from './Components/admin-landing-page/admin-landing-page.component';
 import { AdminLoginComponent } from './Components/admin-login/admin-login.component';
@@ -11,6 +11,9 @@ import { RegisterPageComponent } from './Components/register-page/register-page.
 import { UserloginComponent } from './Components/userlogin/userlogin.component';
 import { ViewRequestComponent } from './Components/view-request/view-request.component';
 import { NavbarComponent } from './Shared/Navbar/navbar.component';
+import { AdminViewBooksComponent } from './Components/admin-view-books/admin-view-books.component';
+import { ListofadminbooksComponent } from './Components/listofadminbooks/listofadminbooks.component';
+import { UpdateBookComponent } from './Components/update-book/update-book.component';
 
 
 const routes: Routes = [
@@ -22,9 +25,15 @@ const routes: Routes = [
   {path:'booklist', component:BooklistComponent},
   {path:'addbook', component:AddbookComponent},
   {path:'register',component:RegisterPageComponent},
-  {path:'adminlanding', component:AdminLandingPageComponent},
-  {path:'viewrequest', component:ViewRequestComponent},
+  {path:'update/:id', component:UpdateBookComponent},
+  {path:'adminlanding', component:AdminLandingPageComponent, children:[
+    {path:'adminlistbooks' , component:ListofadminbooksComponent},
+    {path:'viewrequest', component:ViewRequestComponent}]},
+  // {path:'viewrequest', component:ViewRequestComponent},
+  {path:'adminviewbook', component:AdminViewBooksComponent},
+  // {path:'adminlistbooks' , component:ListofadminbooksComponent},
   {path:'**',component:PagenotfoundComponent},
+  
 ];
 
 @NgModule({

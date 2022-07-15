@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { BooksService } from 'src/app/service/books.service';
+import { ToastrService } from 'ngx-toastr';
+import { NotificationService } from 'src/app/service/notification.service';
 
 @Component({
   selector: 'app-admin-login',
@@ -13,7 +15,10 @@ export class AdminLoginComponent implements OnInit {
 data:FormGroup;
   logdata: Object;
   user: Object;
-  constructor(private service:BooksService, private fb:FormBuilder, private http: HttpClient, private router:Router) { }
+ 
+  use:any
+  constructor(private service:BooksService, private fb:FormBuilder, private http: HttpClient, private router:Router
+    ,private toastr: ToastrService, private toasterservice:NotificationService) { }
   // 'http://localhost:3000/admin'
   ngOnInit(): void {
    this.data= this.fb.group(
@@ -23,17 +28,23 @@ data:FormGroup;
       }
     )
   }
-  adlogin(){
-  this.http.get<any>('http://localhost:3000/admin').subscribe(resp=>{
-   this.user=resp.find((b:any)=>{
-return b.adminid == this.data.value.adminid && b.AdminPassword == this.data.value.AdminPassword
-   });
-   if(this.user){
-    alert("Login Success");
-    this.router.navigate(['/adminlanding'])  
-   }else{
-    alert("please check")
-   }
+
+login(){
+  
+  this.service.getadminid().subscribe(res=>{
+     this.user=res.find((a:any)=>{
+      return a.adminid == this.data.value.adminid && a.adminPassword == this.data.value.AdminPassword;
+    });
+    if(this.user){
+      this.toasterservice.showSuccess("You have Successfully Logged in","Welcome")
+      // alert("Login succcess")
+      
+      this.router.navigate(['/adminlanding'])
+    }else{
+      this.toasterservice.showError("please check id and password", "Sorry Failed!!")
+            // alert("please check username and password")
+          }
   })
-  }
 }
+}
+
