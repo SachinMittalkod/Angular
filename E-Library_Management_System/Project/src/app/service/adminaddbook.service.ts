@@ -36,8 +36,8 @@ export class AdminaddbookService {
     return  this.subject.next(data);
 
   }
-  public getbookid(){
-    const urls=`${this.adminaddurl}`
+  public getbookid(editId:any){
+    const urls=`${this.adminaddurl}/${editId}`
     return this.http.get<Adminaddbook>(urls)
   }
 

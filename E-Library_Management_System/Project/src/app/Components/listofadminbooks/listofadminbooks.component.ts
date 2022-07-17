@@ -52,7 +52,7 @@ export class ListofadminbooksComponent implements OnInit {
       width:'450px',
 
     });
-    this.adminservice.getbookid()
+    // this.adminservice.getbookid()
     this.adminservice.editId(id);
     
   }

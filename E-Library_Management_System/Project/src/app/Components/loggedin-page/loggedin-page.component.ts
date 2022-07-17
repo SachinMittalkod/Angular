@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
-// import { Margin } from '@mui/icons-material';
+import {MatDialog} from '@angular/material/dialog';
 import { RequestbookComponent } from '../requestbook/requestbook.component';
+import { BooksService } from 'src/app/service/books.service';
+
 @Component({
   selector: 'app-loggedin-page',
   templateUrl: './loggedin-page.component.html',
@@ -9,7 +10,7 @@ import { RequestbookComponent } from '../requestbook/requestbook.component';
 })
 export class LoggedinPageComponent implements OnInit {
 
-  constructor(private dialog:MatDialog) { }
+  constructor(private dialog:MatDialog,private service:BooksService) { }
 
   ngOnInit(): void {
  

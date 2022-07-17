@@ -24,41 +24,46 @@ export class UpdateBookComponent implements OnInit {
     this.services.subject.subscribe(response=>{
       this.editId=response;
     })
-  //  this.services.getbookid().subscribe(res=>{
-  //   this.datas=res;
-  //   console.log(this.datas);
-    
-  //  })
-
-  }
-
-  ngOnInit(): void {
     this.forms=this.fb.group({
   
-      image:['', Validators.required],
-      BookName:['',Validators.required],
-      Author:['',Validators.required],
-     Date:['',Validators.required]
+      image:[''],
+      BookName:[],
+      Author:[],
+     Date:[]
     });
-
-    this.services.getbookid().subscribe(res=>{
-      this.datas=res;
-      console.log(this.datas);
-      
-     })
+  }
+  ngOnInit(): void {
+    this.services.getbookid(this.editId).subscribe(response=>{
+      this.forms=this.fb.group({
   
+        image:[response['image']],
+        BookName:[response['BookName']],
+        Author:[response['Author']],
+       Date:[response['Date']]
+      });
 
-
+    })
+    
+    // this.services.getbookid().subscribe(res=>{
+    //   this.datas=res;
+    //   console.log(this.datas);
+    //  })
   }
   // ids:Adminaddbook;
   onEdit(){{
     console.log(this.editId)
     this.services.editSer(this.editId,this.forms.value).subscribe(response=>{
       this.updatebooks=response
-      
-    })
+    });
+
+    // let currentUrl=this.route.url;
+    // this.route.routeReuseStrategy.shouldReuseRoute = () => false;
+    // this.route.onSameUrlNavigation = 'reload';
+    // this.route.navigate([currentUrl]);
+    window.location.reload();
   }
+
+
+
 }
-
-
 }

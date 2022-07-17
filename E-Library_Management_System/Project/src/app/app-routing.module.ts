@@ -25,7 +25,7 @@ const routes: Routes = [
   {path:'booklist', component:BooklistComponent},
   {path:'addbook', component:AddbookComponent},
   {path:'register',component:RegisterPageComponent},
-  {path:'update/:id', component:UpdateBookComponent},
+  {path:'update', component:UpdateBookComponent},
   {path:'adminlanding', component:AdminLandingPageComponent, children:[
     {path:'adminlistbooks' , component:ListofadminbooksComponent},
     {path:'viewrequest', component:ViewRequestComponent}]},
