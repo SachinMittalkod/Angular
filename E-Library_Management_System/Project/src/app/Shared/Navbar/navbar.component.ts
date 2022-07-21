@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private AuthService:AuthService) { }
 
   ngOnInit(): void {
   }
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  // images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
 }

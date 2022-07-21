@@ -4,7 +4,10 @@
       <mat-nav-list>
         <a mat-list-item  (click)="openDialog()" >Add Book<span class="material-icons">bookmark_add</span></a>
         <!-- <a mat-list-item [routerLink]="['/viewrequest']" routerLinkActive="router-link-active" >User Requests<span class="material-symbols-rounded">book</span></a> -->
-        <a mat-list-item [routerLink]="['viewrequest']" routerLinkActive="router-link-active" >User Requests<span class="material-symbols-rounded">book</span></a>
+        <a mat-list-item [routerLink]="['viewrequest']" routerLinkActive="router-link-active" 
+         >User Requests 
+        
+         <span class="material-symbols-rounded" matBadge="{{number.length}}" matBadgeOverlap="">book</span></a>
         <!-- <a mat-list-item [routerLink]="['adminlistbooks']" routerLinkActive="router-link-active" >List of Books<span class="material-symbols-rounded">library_books</span></a> -->
         <a mat-list-item [routerLink]="['adminlistbooks']">List of Books<span class="material-symbols-rounded">library_books</span></a>
      
@@ -18,7 +21,7 @@
               <mat-icon>menu</mat-icon>
               </button>
               <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-                <span class="material-symbols-sharp">supervisor_account</span>    
+                <span class="material-symbols-sharp" [routerLink]="['/adminlanding']" routerLinkActive="router-link-active" >supervisor_account</span>    
               </button>    
               <span>Admin Panel</span>
               <span class="example-spacer"></span>

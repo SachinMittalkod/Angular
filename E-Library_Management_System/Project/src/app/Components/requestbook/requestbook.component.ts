@@ -12,9 +12,11 @@ import { NotificationService } from 'src/app/service/notification.service';
 })
 export class RequestbookComponent implements OnInit {
   forms: FormGroup;
+  today= new Date();
   constructor(private fb:FormBuilder, private service:BooksService, private route:Router, private notifiservice:NotificationService) { }
   arryofdata:any=[];
 data:any;
+
   ngOnInit(): void {
     this.forms=this.fb.group({
    
@@ -27,7 +29,8 @@ data:any;
       this.data=res;
       console.log(this.data);
   })
-
+ 
+  
 }
 
 public onFormSubmit(datas:NgForm){

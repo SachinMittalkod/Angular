@@ -4,6 +4,7 @@ import { Observable, Subject } from 'rxjs';
 import { Adminaddbook } from '../Model/Adminaddbook.model';
 import { User } from '../Model/book.model';
 import { requestbook } from '../Model/requestbook.model';
+import { Registration } from '../Model/user.model';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,7 @@ export class BooksService {
   admin:any;
   data:any;
   isAuthenticated=false;
+  isAdmin:false;
   getusers(){
     return this.http.get<User[]>(this.baseUrl)
   }
@@ -46,37 +48,43 @@ return this.http.get(this.adminurl).subscribe(resp=>{
 })
   }
 
-  autheticateuser(){
+ public autheticateuser(){
     this.admin=this.admin.find((c:any)=>{
       return c.adminid==this.data.adminid && c.AdminPassword ==this.data.AdminPassword
     })
   }
-  navigateUser() {
+
+  public navigateUser() {
     if(this.admin){
       this.checkrole()
     }else{
       alert("not admin")
     }
   }
+  
   checkrole() {
     this.isAuthenticated=true;
     if(this.admin.admin){
-      
+      console.log(this.admin);
     }
   }
 
-  getadminid():Observable<any>{
+  public getadminid():Observable<any>{
     return this.http.get<any>(this.adminurl)
   }
 
-  //accept book service
 
-  acceptrequest(id:number){
+  public acceptrequest(id:number){
     const url=`${this.reqbookurl}/${id}`
   return  this.http.delete<Adminaddbook>(url)
   }
 
- 
+
+  register(sign:any):Observable<Registration>{
+    return this.http.post<Registration>(this.signupurl, sign)
+  }
+
+
 }
 
 

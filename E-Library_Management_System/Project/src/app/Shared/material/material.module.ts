@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
@@ -13,6 +12,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 @NgModule({
@@ -31,7 +31,7 @@ import {MatRadioModule} from '@angular/material/radio';
     MatSidenavModule,
     MatListModule,
     MatRadioModule,
-    
+    MatBadgeModule
   ],
   exports:[
     MatFormFieldModule,
@@ -45,7 +45,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatTableModule,
     MatSidenavModule,
     MatListModule,
-    MatRadioModule
+    MatRadioModule,
+    MatBadgeModule
   ]
 })
 export class MaterialModule { }

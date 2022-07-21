@@ -24,14 +24,17 @@
     background-image: url("./background.jpg");
     background-position: center;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+  
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 220vh;
+    position: relative;
   }
   .row{
     display: flex;
     justify-content: space-around ;
     flex-wrap: wrap;
-   
+   margin-bottom: 90px;
 
    
   }
@@ -87,6 +90,8 @@ margin-top: 50px;}
     color: black;
 
     margin-left: 40px;
+    margin-bottom: 20px;
+   
 
    
 
@@ -154,4 +159,14 @@ margin-top: 50px;}
    margin-right: 85%;
    padding-bottom: 25px;
   
+  }
+  
+  
+  .box{
+    margin-bottom: 0px 500px 0px 0px;
+  }
+  .searchbox {
+    /* margin-right: 85%; */
+    margin: 0px 100px;
+    /* padding-bottom: 25px; */
   }

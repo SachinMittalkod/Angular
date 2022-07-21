@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
+import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { BooksService } from 'src/app/service/books.service';
+import { NotificationService } from 'src/app/service/notification.service';
 @Component({
   selector: 'app-register-page',
   templateUrl: './register-page.component.html',
@@ -10,24 +11,27 @@ import { BooksService } from 'src/app/service/books.service';
 })
 export class RegisterPageComponent implements OnInit {
   public signup:FormGroup;
-  constructor(private fb:FormBuilder, private service:BooksService, private http:HttpClient, private router:Router) { }
+  constructor(private fb:FormBuilder, private service:BooksService, private http:HttpClient, private router:Router,
+     private notifiservice:NotificationService) { }
   signdata:any=[];
   ngOnInit(): void {
     this.signup=this.fb.group({
-      id:[""],
+      
       username:[""],
       email:[""],
       mobileno:[""],
-      createpassword:[""]
+      createpassword:[""],
+      role:['user']
     })
   
   }
-  onFormSubmit(){
-    this.http.post<any>('http://localhost:3000/signupuser', this.signup.value).subscribe(resp=>{
-      alert("Signup succesfull")
-      console.log(resp)
-      this.router.navigate(['/userlogin'])
-    },error=>{alert("please check")})
+  register(){
+    // this.http.post<any>('http://localhost:3000/signupuser', this.signup.value).subscribe(resp=>{
+      this.service.register(this.signup.value).subscribe(response=>{
+        console.log(response);
+        this.notifiservice.showSuccess('Congratulations','Registered Successfully');
+        this.router.navigate(['/userlogin'])
+      })
       
   }
 

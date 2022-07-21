@@ -7,7 +7,7 @@
         <mat-card-title >Registration</mat-card-title>
       </mat-card-header>
      
-      <form class="example-form" [formGroup]="signup" (ngSubmit)="onFormSubmit()">
+      <form class="example-form" [formGroup]="signup" >
        
         <mat-card-content>
          
@@ -33,7 +33,7 @@
          
         </mat-card-content>
       
-        <button mat-stroked-button color="yarn" class="btn-block">Register</button>
+        <button mat-stroked-button color="yarn" class="btn-block" (click)="register()">Register</button>
         
         <!-- <h4>Don't have Account? <a [routerLink]="['/register']"> Sign Up</a></h4>  -->
      

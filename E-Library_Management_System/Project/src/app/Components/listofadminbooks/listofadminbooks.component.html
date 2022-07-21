@@ -10,16 +10,13 @@
       />
     </div>
 
-    <!-- <div class="row" > -->
+   
 
     <mat-card-content class="row">
       <mat-card
         class="column"
         *ngFor="let item of users | filter: term"
-        class="col-md-2"
-        fxLayoutGap="5px"
-        style="margin-left: 5px"
-      >
+        class="col-md-2" fxLayoutGap="5px" style="margin-left: 5px; margin-bottom:25px ">
         <mat-card-title>{{ item.BookName }}</mat-card-title>
 
         <img mat-card-lg-image src="{{ item.image }}" />
@@ -27,17 +24,6 @@
           {{ item.Author }}
         </mat-card-content>
 
-        <!-- <mat-card-content>
-            <span>Issued Date:-</span>{{item.Date | date: 'dd/MM/yyyy'}}
-          </mat-card-content>
-  
-          <mat-card-content>
-           
-            <span style="color: red;">User Must return on:-</span>{{tomorrow }}
-          </mat-card-content> -->
-
-        <!-- <button mat-raised-button color="accient" >Like </button> -->
-        <!-- <button mat-button  routerLink="/updatedbook" ><span class="material-symbols-outlined" [routerLink]="['/update', item.id]" >edit</span></button> -->
         <button mat-button>
           <span class="material-symbols-outlined" (click)="opendialog(item.id)">edit</span>
         </button>
@@ -48,3 +34,6 @@
     </mat-card-content>
   </div>
 </div>
+
+
+

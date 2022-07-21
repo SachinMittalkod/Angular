@@ -34,7 +34,6 @@ import { UpdateBookComponent } from './Components/update-book/update-book.compon
 @NgModule({
   declarations: [
     AppComponent,
- 
     RegisterPageComponent,
     UserloginComponent,
     AdminLoginComponent,  
@@ -69,5 +68,7 @@ import { UpdateBookComponent } from './Components/update-book/update-book.compon
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
 
 

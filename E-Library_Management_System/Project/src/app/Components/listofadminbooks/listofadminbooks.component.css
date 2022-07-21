@@ -20,7 +20,7 @@ h1 {
 }
 
 .rows {
-  background-image: url("./background.jpg");
+  /* background-image: url("./background.jpg"); */
   background-position: center;
   background-size: cover;
   height: 92vh;
@@ -30,6 +30,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  
 
 }
 
@@ -110,7 +111,7 @@ mat-form-field {
 }
 
 .searchbox {
-  /* margin-right: 85%; */
+
   margin: 0px 100px;
-  /* padding-bottom: 25px; */
+
 }

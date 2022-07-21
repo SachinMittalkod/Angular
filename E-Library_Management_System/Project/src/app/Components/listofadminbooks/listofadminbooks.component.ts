@@ -13,6 +13,7 @@ import { Adminaddbook } from 'src/app/Model/Adminaddbook.model';
   selector: 'app-listofadminbooks',
   templateUrl: './listofadminbooks.component.html',
   styleUrls: ['./listofadminbooks.component.css'],
+
 })
 export class ListofadminbooksComponent implements OnInit {
   term: string = '';
@@ -26,11 +27,9 @@ export class ListofadminbooksComponent implements OnInit {
   ) {}
 
   
-  // today=new Date();
-  // tomorrow= new Date(this.today.getTime()+(168*60*60*1000))
+
   ngOnInit(): void {
-    // this.service.getusers().subscribe((response)=>{
-    //   this.users=response;
+  
     this.adminservice.getadminbook().subscribe((response) => {
       this.users = response;
       console.log(this.users);

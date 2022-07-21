@@ -10,6 +10,7 @@ mat-sidenav{
   background-color: rgb(238, 43, 43);
   width: 200px;
   height: 100%;
+  /* position: sticky; */
 }
 mat-nav-list{
   margin-top: 30px;
@@ -119,6 +120,7 @@ button{
     width: 100vw;
     height: 100vh;
     position: relative;
+    /* position: fixed; */
   }
   /* //side nav csss////////////////////////////////////////////////// */
 
@@ -126,5 +128,10 @@ button{
   .links a{
     color: white;
   }
+/* .toolbar{
+  position: fixed;
+  z-index:1 ;
+  width:100vw
+} */
 
  
