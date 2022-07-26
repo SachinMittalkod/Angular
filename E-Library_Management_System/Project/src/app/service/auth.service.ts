@@ -19,9 +19,9 @@ data:any;
   {
 
     console.log(data);
-    return this.http.get('http://localhost:3000/signupuser').subscribe(response=>{
-    console.log(response);
-      this.user=response;
+    return this.http.get('http://localhost:3000/signupuser').subscribe(respon=>{
+    console.log(respon);
+      this.user=respon;
       console.log(this.user);
       this.data=data;
       this.authenticateUser();

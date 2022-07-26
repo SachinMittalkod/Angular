@@ -13,6 +13,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 
 @NgModule({
@@ -31,7 +34,9 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatSidenavModule,
     MatListModule,
     MatRadioModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatPaginatorModule,
+    MatTooltipModule
   ],
   exports:[
     MatFormFieldModule,
@@ -46,7 +51,9 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatSidenavModule,
     MatListModule,
     MatRadioModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatPaginatorModule,
+    MatTooltipModule
   ]
 })
 export class MaterialModule { }

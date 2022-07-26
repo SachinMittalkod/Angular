@@ -15,7 +15,8 @@ export class BooksService {
   signupurl='http://localhost:3000/signupuser'
   adminurl='http://localhost:3000/admindata'
   adminaddbooks='http://localhost:3000/AdminAddbooks'
- 
+  requsetedhistory='http://localhost:3000/reqhistory'
+  
   constructor(private http:HttpClient) { }
 
   user:any;
@@ -80,10 +81,16 @@ return this.http.get(this.adminurl).subscribe(resp=>{
   }
 
 
-  register(sign:any):Observable<Registration>{
+ public register(sign:any):Observable<Registration>{
     return this.http.post<Registration>(this.signupurl, sign)
   }
-
+ 
+  public postreqhistory(body:any):Observable<requestbook>{
+    return this.http.post<requestbook>(this.requsetedhistory,body)
+  }
+  public getreqhistory():Observable<any>{
+    return this.http.get<requestbook[]>(this.requsetedhistory)
+  }
 
 }
 

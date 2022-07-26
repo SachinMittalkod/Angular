@@ -1,0 +1,42 @@
+<div class="loggedin">
+
+
+<div class="background">
+  <mat-toolbar color="primary" class="mat-elevation-z4">
+   
+      <button type="button" mat-icon-button (click)="drawer.toggle()" color="">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <span>User Panel</span>
+      <span class="example-spacer"></span>
+      
+  
+     <div>Welcome  <span style="color: orange ;">{{name}}</span> </div>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" >
+        <mat-icon routerLink="/home"><span class="material-symbols-outlined"  >
+            logout
+            </span></mat-icon>
+      </button>
+      
+     <!-- <button mat-button [matMenuTriggerFor]="afterMenu"><mat-icon>account_box</mat-icon></button> -->
+  <mat-menu #afterMenu="matMenu" xPosition="after">
+    <button mat-menu-item [routerLink]="['/viewrequest']" routerLinkActive="router-link-active" >Requests</button>
+    <!-- <button mat-menu-item>Item 2</button> -->
+  </mat-menu>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="example-container">
+      <mat-sidenav #drawer mode="side" closed  class="sidenav" >
+        <mat-nav-list class="links">
+          <a mat-list-item routerLink='/booklist'>Issued Books<span class="material-icons">library_books</span></a>
+          <a mat-list-item (click)="openDialog()">Request for book</a>
+          <!-- <a mat-list-item routerLink='/booklist'>Issued Books<span class="material-icons">library_books</span></a> -->
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+    
+    </div>
