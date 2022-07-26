@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { requestbook } from 'src/app/Model/requestbook.model';
+import { Requestbook } from 'src/app/Model/requestbook.model';
 import { BooksService } from 'src/app/service/books.service';
 
 
@@ -16,7 +16,7 @@ import { BooksService } from 'src/app/service/books.service';
 export class ViewRequestComponent implements OnInit {
   i:number=0;
   constructor(private service:BooksService, private route:Router) { }
-  book:requestbook[]=[];
+  book:Requestbook[]=[];
   term:any="";
   posthistory:any;
   ngOnInit(): void {

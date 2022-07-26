@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BooksService } from '../../../service/books.service';
 // import { User } from '../../Model/book.model';
-import { requestbook } from 'src/app/Model/requestbook.model';
+import { Requestbook } from 'src/app/Model/requestbook.model';
 import { AdminaddbookService } from 'src/app/service/adminaddbook.service';
 
 
@@ -16,7 +16,7 @@ export class BooklistComponent implements OnInit {
   term:string="";
 column=["id","image","BookName" ,"author" ,"imageUrl"]
   constructor(private service:BooksService, private adminservice:AdminaddbookService) { }
-users:requestbook[]=[];
+users:Requestbook[]=[];
 today= new Date();
 
 tomorrow = new Date(this.today.getTime() + (168 * 60 * 60 * 1000));

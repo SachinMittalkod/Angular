@@ -3,7 +3,7 @@ import { BooksService } from 'src/app/service/books.service';
 import {AfterViewInit, ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
-import { requestbook } from 'src/app/Model/requestbook.model';
+import { Requestbook } from 'src/app/Model/requestbook.model';
 import { MatSort } from '@angular/material/sort';
 
 

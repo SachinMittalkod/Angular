@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { Adminaddbook } from '../Model/Adminaddbook.model';
 import { User } from '../Model/book.model';
-import { requestbook } from '../Model/requestbook.model';
+import { Requestbook } from '../Model/requestbook.model';
 import { Registration } from '../Model/user.model';
 
 @Injectable({
@@ -28,12 +28,12 @@ export class BooksService {
     return this.http.get<User[]>(this.baseUrl)
   }
 
-  public addBook(emp:any):Observable<requestbook>{
-    return this.http.post<requestbook>(this.reqbookurl,emp);
+  public addBook(emp:any):Observable<Requestbook>{
+    return this.http.post<Requestbook>(this.reqbookurl,emp);
   }
 
  public getrequest(){
-    return this.http.get<requestbook[]>(this.reqbookurl)
+    return this.http.get<Requestbook[]>(this.reqbookurl)
   }
 
   public adminlogin(){
@@ -85,11 +85,11 @@ return this.http.get(this.adminurl).subscribe(resp=>{
     return this.http.post<Registration>(this.signupurl, sign)
   }
  
-  public postreqhistory(body:any):Observable<requestbook>{
-    return this.http.post<requestbook>(this.requsetedhistory,body)
+  public postreqhistory(body:any):Observable<Requestbook>{
+    return this.http.post<Requestbook>(this.requsetedhistory,body)
   }
   public getreqhistory():Observable<any>{
-    return this.http.get<requestbook[]>(this.requsetedhistory)
+    return this.http.get<Requestbook[]>(this.requsetedhistory)
   }
 
 }

@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { BooksService } from '../../../service/books.service';
 // import { User } from '../../Model/book.model';
-import { requestbook } from 'src/app/Model/requestbook.model';
+import { Requestbook } from 'src/app/Model/requestbook.model';
 import { AdminaddbookService } from 'src/app/service/adminaddbook.service';
 import { MatDialog } from '@angular/material/dialog';
 import { UpdateBookComponent } from '../update-book/update-book.component';
@@ -19,7 +19,7 @@ import { Router } from '@angular/router';
 export class ListofadminbooksComponent implements OnInit {
   term: string = '';
   column = ['image', 'BookName', 'author', 'imageUrl'];
-  users: requestbook[] = [];
+  users: Requestbook[] = [];
   ids: Adminaddbook;
   constructor(
     private service: BooksService,
