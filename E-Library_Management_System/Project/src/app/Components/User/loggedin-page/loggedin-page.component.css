@@ -7,9 +7,7 @@ button{
     border-radius: 5px;
 }
 
-/* .spacer{
-    flex: auto;
-} */
+
 h2{
     text-align: center;
 }
@@ -128,7 +126,7 @@ body {
 }
 
 .loggedin{
-  background-image: url('./alfons-morales-YLSwjSy7stw-unsplash.jpg');
+
   width: 100vw;
   height: 100vh;
 }
@@ -137,7 +135,7 @@ h2{
 }
 
 
-/* ////////new */
+
 *{
   margin: 0;
   padding: 0;
@@ -278,11 +276,7 @@ button{
   height: 15%;
   text-align: center;
   }
-  
-  
-  
-  
-  
+   
   .example-spacer {
   flex: 1 1 auto;
   }
@@ -334,14 +328,16 @@ button{
   background-color: rgb(54, 59, 59);
   }
   
+  
   .background{
-    background-image: url('../loggedin-page/janko-ferlic-sfL_QOnmy00-unsplash.jpg');
+    background-image: url('../../../../assets/images/janko-ferlic-sfL_QOnmy00-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
     position: relative;
   }
+
   /* //side nav csss////////////////////////////////////////////////// */
   .example-container {
     height:90%;

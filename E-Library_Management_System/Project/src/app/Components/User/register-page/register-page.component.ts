@@ -30,7 +30,7 @@ export class RegisterPageComponent implements OnInit {
       this.service.register(this.signup.value).subscribe(response=>{
         console.log(response);
         this.notifiservice.showSuccess('Congratulations','Registered Successfully');
-        this.router.navigate(['/userlogin'])
+        this.router.navigate(['/login'])
       })
       
   }

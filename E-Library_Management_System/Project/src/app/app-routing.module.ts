@@ -24,7 +24,7 @@ const routes: Routes = [
   {path: '', redirectTo:'home' ,pathMatch:'full'},
   {path:'home',component:NavbarComponent, }, 
   {path:'adminlogin',component:AdminLoginComponent},
-  {path:'userlogin',component:UserloginComponent},  
+  {path:'login',component:UserloginComponent},  
   {path:'afterlogin', component:LoggedinPageComponent, },
   {path:'booklist', component:BooklistComponent},
   {path:'addbook', component:AddbookComponent},

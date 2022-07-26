@@ -31,7 +31,7 @@ export class GaurdGuard implements CanActivate {
     
           else{
     
-            this.router.navigate(['/userlogin']);
+            this.router.navigate(['/login']);
     
           return false;
     

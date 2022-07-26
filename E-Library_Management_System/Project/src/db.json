@@ -25,15 +25,7 @@
       "imageUrl": "/assets/images/04.jpg"
     }
   ],
-  "reqbook": [
-    {
-      "username": "admin",
-      "BookName": "dssf",
-      "Author": "sdfdsf",
-      "Date": "2022-07-25",
-      "id": 1
-    }
-  ],
+  "reqbook": [],
   "AdminAddbooks": [
     {
       "image": "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
@@ -43,43 +35,15 @@
       "id": 3
     },
     {
-      "image": "https://www.whatsappimages.in/wp-content/uploads/2021/07/Top-HD-sad-quotes-for-whatsapp-status-in-hindi-Pics-Images-Download-Free.gif",
-      "BookName": "asdsdasd",
-      "Author": "sdfdffssdffds",
-      "Date": "2022-07-18",
-      "id": 4
-    },
-    {
-      "image": "https://www.whatsappimages.in/wp-content/uploads/2021/07/Top-HD-sad-quotes-for-whatsapp-status-in-hindi-Pics-Images-Download-Free.gif",
-      "BookName": "sachin",
-      "Author": "kdjfdkvjdkl",
-      "Date": "2022-07-18",
-      "id": 5
-    },
-    {
-      "image": "https://www.whatsappimages.in/wp-content/uploads/2021/07/Top-HD-sad-quotes-for-whatsapp-status-in-hindi-Pics-Images-Download-Free.gif",
-      "BookName": "Mittalko",
-      "Author": "kdjfdkvjdkldfvfdgf",
-      "Date": "2022-07-18",
-      "id": 6
-    },
-    {
       "image": "https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg",
-      "BookName": "Mittalkods",
-      "Author": "sfwei",
+      "BookName": "Nature Gift",
+      "Author": "Nature",
       "Date": "2022-07-18",
       "id": 7
     },
     {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqEvtKRnMhM-4ha6jIwDsNLauXxuOZX2WADg&usqp=CAU",
-      "BookName": "DJ",
-      "Author": "DSJAJ",
-      "Date": "2022-07-18",
-      "id": 10
-    },
-    {
       "image": "https://images-na.ssl-images-amazon.com/images/I/61cVNCxwLXL.jpg",
-      "BookName": "Fear not tobbe",
+      "BookName": "Fear not be Strong",
       "Author": "Vivekananda",
       "Date": "2022-07-25",
       "id": 11
@@ -115,6 +79,14 @@
       "createpassword": "1234",
       "role": "user",
       "id": 4
+    },
+    {
+      "username": "Kumar",
+      "email": "kumar@gmail.com",
+      "mobileno": "21515456",
+      "createpassword": "1234",
+      "role": "user",
+      "id": 5
     }
   ],
   "requestedhistory": [],
@@ -155,123 +127,11 @@
       "id": 5
     },
     {
-      "username": "sachin",
-      "BookName": "kavi",
-      "Author": "Masti venkatesh ayangar",
-      "Date": "2022-07-30",
+      "username": "Kumar",
+      "BookName": "gfh",
+      "Author": "gfhfgh",
+      "Date": "2022-07-26",
       "id": 6
-    },
-    {
-      "username": "sachin",
-      "BookName": "Majestic",
-      "Author": "kempegouda",
-      "Date": "2022-07-30",
-      "id": 7
-    },
-    {
-      "username": "sachin",
-      "BookName": "Majestic",
-      "Author": "kempegouda",
-      "Date": "2022-07-30",
-      "id": 8
-    },
-    {
-      "username": "sachin",
-      "BookName": "kavi",
-      "Author": "Masti venkatesh ayangar",
-      "Date": "2022-07-30",
-      "id": 9
-    },
-    {
-      "username": "sachin",
-      "BookName": "gubbi",
-      "Author": "veeranna",
-      "Date": "2022-07-30",
-      "id": 10
-    },
-    {
-      "username": "das",
-      "BookName": "pilot",
-      "Author": "adventure",
-      "Date": "2022-07-29",
-      "id": 11
-    },
-    {
-      "username": "das",
-      "BookName": "pilot",
-      "Author": "adventuregfh",
-      "Date": "2022-07-29",
-      "id": 12
-    },
-    {
-      "username": "das",
-      "BookName": "zxcxzczc",
-      "Author": "zxcxzvfd",
-      "Date": "2022-07-21",
-      "id": 13
-    },
-    {
-      "username": "das",
-      "BookName": "pilot",
-      "Author": "adventuregfh",
-      "Date": "2022-07-29",
-      "id": 14
-    },
-    {
-      "username": "admin",
-      "BookName": "rttyry",
-      "Author": "rtytryrt",
-      "Date": "2022-07-28",
-      "id": 15
-    },
-    {
-      "username": "sachin",
-      "BookName": "cgh",
-      "Author": "ghfhg",
-      "Date": "2022-07-19",
-      "id": 16
-    },
-    {
-      "username": "sachin",
-      "BookName": "asdsda",
-      "Author": "asdsd",
-      "Date": "2022-07-27",
-      "id": 17
-    },
-    {
-      "username": "sachin",
-      "BookName": "rtertr",
-      "Author": "ertert",
-      "Date": "2022-07-27",
-      "id": 18
-    },
-    {
-      "username": "admin",
-      "BookName": "gfhgh",
-      "Author": "fghfgh",
-      "Date": "2022-07-25",
-      "id": 19
-    },
-    {
-      "username": "admin",
-      "BookName": "sdfdf",
-      "Author": "sdfdsf",
-      "Date": "2022-07-26",
-      "id": 20
-    },
-    {
-      "username": "sachin",
-      "BookName": "asds",
-      "Author": "asdsd",
-      "Date": "2022-07-25",
-      "id": 21
-    },
-    {
-      "username": "sachin",
-      "BookName": "sadas",
-      "Author": "asdsd",
-      "Date": "2022-07-26",
-      "id": 22
     }
   ]
 }
