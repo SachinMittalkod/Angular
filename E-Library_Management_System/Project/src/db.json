@@ -25,30 +25,8 @@
       "imageUrl": "/assets/images/04.jpg"
     }
   ],
-  "reqbook": [
-    {
-      "username": "sachin",
-      "BookName": "ghj",
-      "Author": "ghjghj",
-      "Date": "2022-07-26",
-      "id": 1
-    },
-    {
-      "username": "sachin",
-      "BookName": "fghf",
-      "Author": "fghgfh",
-      "Date": "2022-07-26",
-      "id": 2
-    }
-  ],
+  "reqbook": [],
   "AdminAddbooks": [
-    {
-      "image": "https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg",
-      "BookName": "Nature Gift",
-      "Author": "Nature",
-      "Date": "2022-07-18",
-      "id": 7
-    },
     {
       "image": "https://images-na.ssl-images-amazon.com/images/I/61cVNCxwLXL.jpg",
       "BookName": "Fear not be Strong",
@@ -147,6 +125,20 @@
       "Author": "ghjghj",
       "Date": "2022-07-26",
       "id": 7
+    },
+    {
+      "username": "sachin",
+      "BookName": "asd",
+      "Author": "asds",
+      "Date": "2022-07-27",
+      "id": 8
+    },
+    {
+      "username": "sachin",
+      "BookName": "asd",
+      "Author": "asds",
+      "Date": "2022-07-27",
+      "id": 9
     }
   ]
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ isAdmin=false;
 isUser=false;
 response:any;
 data:any;
-  constructor(private http:HttpClient,private router:Router) { }
+  constructor(private http:HttpClient,private router:Router, private toastr:ToastrService) { }
 
   public authenticateEmployee(data:any)
   {
@@ -45,9 +46,16 @@ navigateUser(){
   if(this.response)
   {
     this.checkRole();
+    this.toastr.success('', 'Logged In Successfully', {
+      positionClass: 'toast-top-center'
+    });
   }
   else{
-    alert ("Invalid Credential");
+    // alert ("Invalid Credential");
+    this.toastr.error('', 'Invalid Credentials', {
+      positionClass: 'toast-top-center'
+    });
+ 
   }
 }
 checkRole()

@@ -25,14 +25,14 @@ const routes: Routes = [
   {path:'home',component:NavbarComponent, }, 
   {path:'adminlogin',component:AdminLoginComponent},
   {path:'login',component:UserloginComponent},  
-  {path:'afterlogin', component:LoggedinPageComponent, },
+  {path:'afterlogin', component:LoggedinPageComponent,canActivate:[GaurdGuard] },
   {path:'booklist', component:BooklistComponent},
   {path:'addbook', component:AddbookComponent},
   {path:'register',component:RegisterPageComponent},
-  {path:'updat e', component:UpdateBookComponent},
+  {path:'update', component:UpdateBookComponent},
 
-  // {path:'adminlanding', component:AdminLandingPageComponent,canActivate:[GaurdGuard],children:[
-    {path:'adminlanding', component:AdminLandingPageComponent,children:[
+  {path:'adminlanding', component:AdminLandingPageComponent,canActivate:[GaurdGuard] ,children:[
+    // {path:'adminlanding', component:AdminLandingPageComponent,children:[
     {path:'adminlistbooks' , component:ListofadminbooksComponent},
     {path:'viewrequest', component:ViewRequestComponent},
   {path:'requesthistory', component:RequestHistoryComponent}]},

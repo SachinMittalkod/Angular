@@ -14,13 +14,14 @@ export class AdminLandingPageComponent implements OnInit {
   showFiller = true;
   number:any;
   constructor(private dialog:MatDialog, private service:BooksService ) { 
-    this.service.getrequest().subscribe(daata=>{
-this.number=daata;
-console.log(this.number);
-    })
+
   }
  
   ngOnInit(): void {
+    this.service.getrequest().subscribe(daata=>{
+      this.number=daata;
+      console.log(this.number);
+          })
   }
   openDialog(){
     this.dialog.open(AddbookComponent, {

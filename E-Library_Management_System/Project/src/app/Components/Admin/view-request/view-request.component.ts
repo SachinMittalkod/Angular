@@ -20,10 +20,6 @@ export class ViewRequestComponent implements OnInit {
   term:any="";
   posthistory:any;
   ngOnInit(): void {
-
- 
-
-
   this.service.getrequest().subscribe(resp=>{
     this.book=resp;
     console.log(this.book);
@@ -33,7 +29,11 @@ export class ViewRequestComponent implements OnInit {
   delete(id:number){
 this.service.acceptrequest(id).subscribe(res=>{
   console.log(res);
-  window.location.reload();
+  this.service.getrequest().subscribe(resp=>{
+    this.book=resp;
+    console.log(this.book);
+  })
+  
   
   // let currentUrl=this.route.url;
   // this.route.routeReuseStrategy.shouldReuseRoute = () => false;

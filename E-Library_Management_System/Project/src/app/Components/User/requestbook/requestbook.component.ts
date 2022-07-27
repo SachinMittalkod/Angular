@@ -16,8 +16,9 @@ export class RequestbookComponent implements OnInit {
   forms: FormGroup;
   today= new Date();
   name=localStorage.getItem('username')
+  no:any=0;
   constructor(private fb:FormBuilder, private service:BooksService, private route:Router, private notifiservice:NotificationService,
-    private authservice:AuthService,private toster:ToastrService) {
+    private authservice:AuthService,private toastr:ToastrService) {
     
    }
   arryofdata:any=[];
@@ -46,34 +47,27 @@ data:any;
   })
 }
 
-// public onFormSubmit(datas:NgForm){
-//   debugger;
 
-
-//   this.service.addBook(datas).subscribe(data=>{
-//     this.arryofdata=data;
-//     console.log(this.arryofdata.id);
-
-//     window.location.reload();
-//   })
-
-//   if(this.arryofdata.id < 2){
-
-//     this.notifiservice.showSuccess("Successfully" ,"You Have Requested Book")
- 
-//   }else{
-//     this.notifiservice.showError("Failed", "Sorry You can't add  more than 3 books")
-  
-//   }
-//     }
 
     public onFormSubmit(datas:NgForm){
       // debugger;
-      this.service.addBook(datas).subscribe(data=>{
-        this.arryofdata=data;
-        console.log(this.arryofdata.id);
-        this.toster.success("Successfully" ,"You Have Requested Book")
-        window.location.reload();
-      })
+        if(this.no<3){
+          this.service.addBook(datas).subscribe(data=>{
+            this.arryofdata=data;
+         this.no++;
+            console.log(this.arryofdata.id);
+       
+          })
+          this.toastr.success('', 'Successfully Requested Book', {
+            positionClass: 'toast-top-center'
+          });
+      
+        }else{
+          this.toastr.error('', 'You cant Request more than 3', {
+            positionClass: 'toast-top-center'
+          });
+       
+        }
+  
         }
   }

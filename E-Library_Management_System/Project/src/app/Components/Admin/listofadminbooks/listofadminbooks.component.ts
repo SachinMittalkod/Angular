@@ -41,14 +41,16 @@ export class ListofadminbooksComponent implements OnInit {
   }
 
   deleteit(id: number) {
-    window.location.reload();
+   
     this.adminservice.delete(id).subscribe((resp) => {
       console.log(resp);
+
+      this.adminservice.getadminbook().subscribe((response) => {
+        this.users = response;
+        console.log(this.users);
+      });
       
-    // let currentUrl=this.route.url;
-    // this.route.routeReuseStrategy.shouldReuseRoute = () => false;
-    // this.route.onSameUrlNavigation = 'reload';
-    // this.route.navigate([currentUrl]);
+   
 
       
     });
